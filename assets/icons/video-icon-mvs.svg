@@ -1,0 +1,28 @@
+<svg id="Group_278" data-name="Group 278" xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: rgba(0,0,0,0.5);
+        stroke: #fff;
+        stroke-width: 2px;
+      }
+
+      .cls-2 {
+        fill: #fff;
+      }
+
+      .cls-3 {
+        stroke: none;
+      }
+
+      .cls-4 {
+        fill: none;
+      }
+    </style>
+  </defs>
+  <g id="Ellipse_6" data-name="Ellipse 6" class="cls-1">
+    <circle class="cls-3" cx="25" cy="25" r="25"/>
+    <circle class="cls-4" cx="25" cy="25" r="24"/>
+  </g>
+  <path id="Icon_ionic-md-play" data-name="Icon ionic-md-play" class="cls-2" d="M6.75,3.656v20l15.686-10Z" transform="translate(13.25 11.344)"/>
+</svg>

@@ -1,0 +1,4802 @@
+.scrollbar-mobile-header,
+.scrollbar-mobile-header>ul {
+	list-style: none;
+	display: flex;
+	gap: 20px
+}
+
+@font-face {
+	font-family: Gilroy-Medium;
+	src: url('../fontsv2/Gilroy-Medium.woff') format('woff');
+	font-display: swap
+}
+
+@font-face {
+	font-family: 'Futura PT Book';
+	src: url('../fontsv2/FuturaCyrillicBook.woff') format('woff');
+	font-display: swap
+}
+
+@font-face {
+	font-family: 'Futura PT Demi';
+	src: url('../fontsv2/FuturaCyrillicDemi.woff') format('woff');
+	font-display: swap
+}
+
+@font-face {
+	font-family: 'Futura PT Medium';
+	src: url('../fontsv2/FuturaCyrillicMedium.woff') format('woff');
+	font-display: swap
+}
+
+@font-face {
+	font-family: Gilroy;
+	src: url('../fontsv2/Gilroy-Regular.woff') format('woff');
+	font-weight: 400;
+	font-display: swap
+}
+
+@font-face {
+	font-family: Gilroy;
+	src: url('../fontsv2/Gilroy-Medium.woff') format('woff');
+	font-weight: 500;
+	font-display: swap
+}
+
+@font-face {
+	font-family: Gilroy;
+	src: url('../fontsv2/Gilroy-Bold.woff') format('woff');
+	font-weight: 700;
+	font-display: swap
+}
+
+@font-face {
+	font-family: Gilroy;
+	src: url('../fontsv2/Gilroy-Heavy.ttf') format('tff');
+	font-weight: 900;
+	font-style: normal;
+	font-display: swap
+}
+
+@font-face {
+	font-family: 'Poppins Regular';
+	font-style: normal;
+	font-weight: 400;
+	src: local('Poppins Regular'), url('../fontsv2/Poppins-Regular.woff') format('woff');
+	font-display: swap
+}
+
+@font-face {
+	font-family: 'Poppins Italic';
+	font-style: normal;
+	font-weight: 400;
+	src: local('Poppins Italic'), url('../fontsv2/Poppins-Italic.woff') format('woff');
+	font-display: swap
+}
+
+@font-face {
+	font-family: 'Poppins Thin';
+	font-style: normal;
+	font-weight: 400;
+	src: local('Poppins Thin'), url('../fontsv2/Poppins-Thin.woff') format('woff');
+	font-display: swap
+}
+
+@font-face {
+	font-family: 'Poppins Thin Italic';
+	font-style: normal;
+	font-weight: 400;
+	src: local('Poppins Thin Italic'), url('../fontsv2/Poppins-ThinItalic.woff') format('woff');
+	font-display: swap
+}
+
+@font-face {
+	font-family: 'Poppins ExtraLight';
+	font-style: normal;
+	font-weight: 400;
+	src: local('Poppins ExtraLight'), url('../fontsv2/Poppins-ExtraLight.woff') format('woff');
+	font-display: swap
+}
+
+@font-face {
+	font-family: 'Poppins ExtraLight Italic';
+	font-style: normal;
+	font-weight: 400;
+	src: local('Poppins ExtraLight Italic'), url('../fontsv2/Poppins-ExtraLightItalic.woff') format('woff');
+	font-display: swap
+}
+
+@font-face {
+	font-family: 'Poppins Light';
+	font-style: normal;
+	font-weight: 400;
+	src: local('Poppins Light'), url('../fontsv2/Poppins-Light.woff') format('woff');
+	font-display: swap
+}
+
+@font-face {
+	font-family: 'Poppins Light Italic';
+	font-style: normal;
+	font-weight: 400;
+	src: local('Poppins Light Italic'), url('../fontsv2/Poppins-LightItalic.woff') format('woff');
+	font-display: swap
+}
+
+@font-face {
+	font-family: 'Poppins Medium';
+	font-style: normal;
+	font-weight: 400;
+	src: local('Poppins Medium'), url('../fontsv2/Poppins-Medium.woff') format('woff');
+	font-display: swap
+}
+
+@font-face {
+	font-family: 'Poppins Medium Italic';
+	font-style: normal;
+	font-weight: 400;
+	src: local('Poppins Medium Italic'), url('../fontsv2/Poppins-MediumItalic.woff') format('woff');
+	font-display: swap
+}
+
+@font-face {
+	font-family: 'Poppins SemiBold';
+	font-style: normal;
+	font-weight: 400;
+	src: local('Poppins SemiBold'), url('../fontsv2/Poppins-SemiBold.woff') format('woff');
+	font-display: swap
+}
+
+@font-face {
+	font-family: 'Poppins SemiBold Italic';
+	font-style: normal;
+	font-weight: 400;
+	src: local('Poppins SemiBold Italic'), url('../fontsv2/Poppins-SemiBoldItalic.woff') format('woff');
+	font-display: swap
+}
+
+@font-face {
+	font-family: 'Poppins Bold';
+	font-style: normal;
+	font-weight: 400;
+	src: local('Poppins Bold'), url('../fontsv2/Poppins-Bold.woff') format('woff');
+	font-display: swap
+}
+
+@font-face {
+	font-family: 'Poppins Bold Italic';
+	font-style: normal;
+	font-weight: 400;
+	src: local('Poppins Bold Italic'), url('../fontsv2/Poppins-BoldItalic.woff') format('woff');
+	font-display: swap
+}
+
+@font-face {
+	font-family: 'Poppins ExtraBold';
+	font-style: normal;
+	font-weight: 400;
+	src: local('Poppins ExtraBold'), url('../fontsv2/Poppins-ExtraBold.woff') format('woff');
+	font-display: swap
+}
+
+@font-face {
+	font-family: 'Poppins ExtraBold Italic';
+	font-style: normal;
+	font-weight: 400;
+	src: local('Poppins ExtraBold Italic'), url('../fontsv2/Poppins-ExtraBoldItalic.woff') format('woff');
+	font-display: swap
+}
+
+@font-face {
+	font-family: 'Poppins Black';
+	font-style: normal;
+	font-weight: 400;
+	src: local('Poppins Black'), url('../fontsv2/Poppins-Black.woff') format('woff');
+	font-display: swap
+}
+
+@font-face {
+	font-family: 'Poppins Black Italic';
+	font-style: normal;
+	font-weight: 400;
+	src: local('Poppins Black Italic'), url('../fontsv2/Poppins-BlackItalic.woff') format('woff');
+	font-display: swap
+}
+
+@font-face {
+	font-family: Gilroy;
+	src: url('../fontsv2/Gilroy-Heavy.ttf') format('ttf');
+	font-weight: 900;
+	font-style: normal;
+	font-display: swap
+}
+
+body {
+	font-family: Gilroy, sans-serif;
+	-webkit-tap-highlight-color: transparent
+}
+
+*,
+:after,
+:before {
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+	margin: 0
+}
+
+a,
+button,
+img {
+	text-decoration: none;
+	cursor: pointer;
+	border: none;
+	background: 0 0
+}
+
+::-webkit-scrollbar {
+	width: 8px;
+	height: 8px
+}
+
+::-webkit-scrollbar-track {
+	background: #f1f1f1
+}
+
+::-webkit-scrollbar-thumb {
+	background: #d52457;
+	border-radius: 10px
+}
+
+::-webkit-scrollbar-thumb:hover {
+	background: #a0a0a0
+}
+
+:root {
+	--rating-max: 5;
+	--rating-content: '★★★★★';
+	--rating-inactive-color: #b5b5b5;
+	--rating-background: #FFBD00
+}
+
+.header-section-pv {
+	position: sticky;
+	z-index: 9999;
+	top: 0
+}
+
+.audience--poll--screen,
+.content-dropdown-modal,
+.dropdownContent_list,
+.hit--flop--boxes,
+.horo--tab--container .horo--content--tab,
+.mlayout,
+.modal-header-mobile,
+.prediction--bar--wrapper--hf,
+.prediction--result--function:last-child .predict--nxt--mv--btn,
+.progress--bar--wrapper,
+.tabcontent--beauty,
+.tabcontent--entertainment,
+.tabcontent--fashion,
+.tabcontent--health,
+.tabcontent--korean,
+.tabcontent--lifestyle,
+.tabcontent--mv--review,
+.tabcontent--pvk--advisory,
+.tabcontent--select,
+.tabcontent--tech,
+.tabcontent--top--mv,
+.tabcontent--tv,
+.tabcontent--sports {
+	display: none
+}
+
+.dropdownContent_list,
+.header-section-pv {
+	margin: 0 0 30px;
+	box-shadow: 0 3px 10px 0 rgba(0, 0, 0, .06)
+}
+
+.collapsible_bttn_header,
+.header-section-pv,
+.modal-content-header,
+.modal_header_mobile,
+.tip-of-week-container .tip-week-black,
+.tip-of-week-container>a>div {
+	background-color: #fff
+}
+
+.drop-down-list-header,
+.head--arrow--season,
+.header-full-flex-container,
+.modal_header_mobile {
+	justify-content: space-between
+}
+
+.drop-down-list-header,
+.dropdown-container-head,
+.head--arrow--season,
+.header-full-flex-container,
+.header-log-div,
+.lifestyle--bttn-flex,
+.modal_header_mobile,
+.pagination--beauty--review,
+.pagination--fashion,
+.pagination--lifestyle--review,
+.pagination--new--release,
+.pagination--season,
+.pvk--adv--blue {
+	display: flex;
+	align-items: center
+}
+
+.dropdown-content-head:hover .dropdownContent_list,
+.top-story-flex {
+	display: grid
+}
+
+.modal-content-header {
+	box-shadow: 0 1px 6px 0 rgba(0, 0, 0, .06)
+}
+
+.collapsible_bttn_header,
+.modal-header-mobile {
+	width: 100%
+}
+
+.dropdown-content-head:hover .dropbtn-header,
+.dropdownContent_list,
+.header-section-pv {
+	border: 1px solid #e3e4e4
+}
+
+.hamburger-img {
+	width: 30px;
+	height: 30px;
+	object-fit: contain
+}
+
+.header-log-div {
+	gap: 5px
+}
+
+.pvk-logo {
+	width: 140px;
+	height: 40px;
+	object-fit: contain
+}
+
+.dropdown-content-head:hover .dropbtn-header::after {
+	transform: translateY(-50%) rotate(135deg);
+	top: 54%
+}
+
+.dropbtn-header {
+	font: 500 14px 'Futura PT Medium';
+	padding: 30px 23px 30px 10px;
+	position: relative;
+	letter-spacing: .42px;
+	color: #0c0c0f;
+	text-transform: uppercase;
+	white-space: nowrap
+}
+
+.collapsible_bttn_header,
+.dropdownContent_list .list_drdwn_23 {
+	text-transform: capitalize;
+	font: 500 16px 'Futura PT Medium';
+	letter-spacing: .48px
+}
+
+.dropdown-content-head:hover .dropbtn-header {
+	background: #f5f5f5;
+	padding: 30px 23px 30px 10px
+}
+
+.dropbtn-header::after {
+	content: "";
+	position: absolute;
+	top: 48%;
+	transform: translateY(-50%) rotate(315deg);
+	width: 6px;
+	height: 6px;
+	right: 12px;
+	border-left: 1px solid #000;
+	border-bottom: 1px solid #000;
+	transition: transform .3s ease-in-out;
+	transform-origin: center
+}
+
+.dropbtn-header-select::after,
+.dropbtn-header-tech::after {
+	display: none !important
+}
+
+.dropdownContent_list {
+	position: absolute;
+	padding: 25px 35px 33px 15px;
+	z-index: 1;
+	grid-column-gap: 50px;
+	grid-row-gap: 20px;
+	width: fit-content;
+	grid-template-rows: repeat(5, 1fr);
+	grid-auto-flow: column dense;
+	box-shadow: 0 3px 6px 0 rgba(0, 0, 0, .06);
+	background-color: #f5f5f5
+}
+
+.dropdownContent_list .list_drdwn_23 {
+	color: #000;
+	text-decoration: none;
+	display: block;
+	white-space: nowrap
+}
+
+.multiple--dropdown--list {
+	grid-template-rows: 1fr
+}
+
+.multiple--dropdown--list>.multilple--ul--grid {
+	display: grid;
+	grid-row-gap: 20px
+}
+
+.dropdownContent_list .list_drdwn_23:active,
+.dropdownContent_list .list_drdwn_23:hover {
+	font: 500 16px 'Futura PT Demi'
+}
+
+ul {
+	list-style: none
+}
+
+.modal-header-mobile {
+	background: rgba(0, 0, 0, .8);
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 100%;
+	z-index: 9999
+}
+
+.modal-content-header {
+	position: relative;
+	height: 100%;
+	max-width: 400px
+}
+
+.modal-dropdown-header {
+	padding: 0 0 90px;
+	position: relative;
+	overflow: auto;
+	height: 100%
+}
+
+.modal_header_mobile {
+	position: relative;
+	z-index: 5;
+	box-shadow: 0 3px 6px 0 rgba(0, 0, 0, .1);
+	padding: 10px 20px
+}
+
+.modal_header_mobile .pvk-logo-head-modal {
+	width: 139.5px;
+	height: 36px;
+	object-fit: contain
+}
+
+.collapsible_bttn_header {
+	border: none;
+	text-align: left;
+	color: #0c0c0f
+}
+
+.collapsible_bttn_header .arrow_23_pv {
+	position: absolute;
+	border-top: 2px solid #000;
+	border-right: 2px solid #000;
+	transition: transform .3s;
+	transform-origin: center;
+	width: 10px;
+	height: 10px;
+	right: 20px;
+	transform: rotate(135deg)
+}
+
+.collapsible_bttn_header.active,
+.drop-down-list-header {
+	border-top: 1px solid #e3e4e3
+}
+
+.collapsible_bttn_header.active .arrow_23_pv {
+	transform: rotate(-45deg);
+	top: 45%
+}
+
+.collapsible_bttn_header.active,
+.content-dropdown-modal {
+	background: #f7f7f7
+}
+
+.content-dropdown-modal {
+	overflow: hidden;
+	flex-direction: column;
+	padding: 0 20px
+}
+
+.drop-down-list-header {
+	font: 500 16px 'Futura PT Medium';
+	padding: 15px 5px;
+	text-decoration: none;
+	letter-spacing: .48px;
+	text-align: left;
+	color: #0c0c0f
+}
+
+.drop-down-list-header img {
+	height: 10px;
+	width: 14px
+}
+
+.drop-down-list-header:first-child {
+	border-top: none
+}
+
+.scrollbar-mobile-header {
+	padding: 3px 18px 10px;
+	overflow: auto;
+	background-color: #f5f5f5;
+	box-shadow: 0 3px 10px 0 rgba(0, 0, 0, .1)
+}
+
+.scrollbar-mobile-header .list_23 {
+	font: 500 14px 'Futura PT Medium';
+	text-transform: uppercase;
+	letter-spacing: .84px;
+	color: #0c0c0f;
+	white-space: nowrap
+}
+
+.scrollbar-mobile-header .list_23#active_nav {
+	border-bottom: 2px solid #0c0c0f
+}
+
+.head--social--icons {
+	margin: 20px 10px 0;
+	padding: 12px 0;
+	background-color: #f7f7f7;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 23px
+}
+
+.head--modal--icons>img {
+	width: 36px;
+	height: 36px;
+	object-fit: contain
+}
+
+.list--modal--caps {
+	font: 500 13.5px/3.33 'Futura PT Medium';
+	letter-spacing: .14px;
+	color: #0c0c0f !important;
+	text-transform: uppercase;
+	white-space: normal !important
+}
+
+.ad-box-head,
+.skinnerAd {
+	font-size: 14px;
+	color: #212529;
+	font-weight: 500;
+    display: none;
+}
+
+.modal--bottom--div {
+	margin: 15px 18px 20px
+}
+
+.grid--bottom--modal {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-auto-flow: row dense;
+	column-gap: 40px
+}
+
+.subscribe--bttn--head {
+	margin: 0 18px 20px
+}
+
+.subscribe--bttn--head .sub--style,
+.subscribe--bttn--head>a {
+	font: 500 13px 'Futura PT Medium';
+	background: #fff;
+	letter-spacing: .78px;
+	text-align: center;
+	color: #0c0c0f;
+	padding: 13px 0;
+	border: 1px solid #0c0c0f;
+	width: 100%;
+	display: block;
+	text-transform: uppercase
+}
+
+.ad-box-head {
+	background: #f7f7f7;
+	height: 310px;
+	padding: 18px 110px
+}
+
+.red-bg-ltst,
+.red_clr_ltst {
+	background: #d80000;
+	top: 0;
+	position: absolute
+}
+
+.add-head {
+	font: 500 12px/1.33 Gilroy-Medium;
+	letter-spacing: .24px;
+	color: #73737c;
+	text-align: center;
+	margin: 0 0 5px;
+	text-transform: capitalize
+}
+
+.exp-bttn-ltst,
+.red_clr_ltst,
+.tip_heading_div {
+	text-transform: uppercase
+}
+
+#simpleModal--trailer iframe,
+.add-images {
+	width: 100%;
+	height: 100%
+}
+
+.latest-section-wrapper,
+.top-stories-pv {
+	margin: 20px auto
+}
+
+.top-story-div1>a {
+	grid-template-columns: 1fr 1fr;
+	position: relative
+}
+
+.top-story-div {
+	border-left: 1px dotted #ccc;
+	padding: 0 0 0 25px
+}
+
+.top-story-div:first-child {
+	padding: 0
+}
+
+.border-none-story,
+.top-story-div:first-child {
+	border-left: none
+}
+
+.top-story-flex {
+	grid-template-columns: 3.1fr 1fr 1fr;
+	gap: 25px;
+	margin: 0 0 30px
+}
+
+.top-story-grid {
+	padding: 30px 0 0;
+	border-top: 1px dotted #ccc;
+	gap: 25px;
+	display: grid;
+	grid-template-columns: 0.88fr 1fr 1fr 1fr 1fr
+}
+
+.top_story_first_image {
+	width: 100%;
+	aspect-ratio: 3/3;
+	object-fit: cover
+}
+
+.top_story_images {
+	width: 100%;
+	height: fit-content;
+	object-fit: cover;
+	aspect-ratio: 3/3
+}
+
+.article-time-pv,
+.article-title-pv {
+	font: 500 12px/1.92 Gilroy-Medium;
+	letter-spacing: .48px;
+	color: #0c0c0f;
+	text-transform: uppercase
+}
+
+.article-time-pv {
+	margin: 5px 0 0
+}
+
+.article-content-pv {
+	font: 500 18px/1.38 'Futura PT Medium';
+	color: #0c0c0f
+}
+
+.main-article-time-pv,
+.main-article-title-pv {
+	font: 500 15px/1.53 Gilroy-Medium
+}
+
+.main-article-content-pv {
+	font: 500 26px/1.53 'Futura PT Medium'
+}
+
+.top-stories-pv .main-article-content-pv {
+	margin: 5px 0 10px
+}
+
+.red_clr_ltst {
+	font: bold 20px 'Futura PT Bold';
+	left: 0;
+	clip-path: polygon(0 0, 100% 0, 90% 100%, 0% 100%);
+	padding: 11px 27.4px 12px 16px;
+	color: #fff
+}
+
+.latest-head-img {
+	width: 100%;
+	height: 92.4px;
+	object-fit: contain
+}
+
+.latest-grid-sec {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	column-gap: 19px;
+	row-gap: 40px
+}
+
+.latest-box-container>a {
+	position: relative;
+	display: flex;
+	border-right: 1px solid #ccc
+}
+
+.latest-images {
+	aspect-ratio: 3/3;
+	height: 120px;
+	object-fit: cover
+}
+
+.latest-box-content>.article-content-pv {
+	padding: 0 20px 0 0
+}
+
+.red-bg-ltst {
+	font: 700 18px/1.05 Gilroy;
+	padding: 4px 10px 5px 15px;
+	letter-spacing: .88px;
+	color: #fff;
+	clip-path: polygon(0 0, 100% 0%, 100% 100%, 23% 100%);
+	right: 0
+}
+
+.explore-more-ltst:after,
+.explore-more-ltst:before {
+	content: '';
+	width: 100%;
+	border: 1px dotted #ccc
+}
+
+.explore-more-ltst {
+	display: flex;
+	align-items: center;
+	margin: 40px 0 0
+}
+
+.exp-bttn-ltst {
+	font: bold 15px Gilroy-Medium;
+	background: #fff;
+	display: flex;
+	padding: 18px 31px;
+	letter-spacing: .9px;
+	color: #0c0c0f;
+	border: 1px solid #ccc;
+	white-space: nowrap
+}
+
+.exp-bttn-ltst::after,
+.exp-bttn-ltst::before {
+	content: "";
+	background: rgba(0, 0, 0, .35);
+	height: 1px;
+	font-size: 0px;
+	line-height: 0
+}
+
+.season-picks-container,
+.season-picks-wrapper {
+	margin: 0 auto 20px;
+	background-color: #fdf1d2
+}
+
+.season-picks-container {
+	margin: 0 auto
+}
+
+.season-picks-wrapper {
+	padding: 10px 0 40px
+}
+
+.season-pick-bg {
+	width: 263.1px;
+	height: 63.8px;
+	object-fit: contain
+}
+
+.season-pick-img {
+	position: absolute;
+	top: 10px;
+	left: 20px;
+	width: 220px;
+	height: 41.4px;
+	object-fit: contain
+}
+
+.season-pick-header {
+	position: relative
+}
+
+.tip-of-week-container {
+	height: fit-content;
+	background-color: #3336ad;
+	padding: 15px 15px 19px
+}
+
+.tip-of-week-container img {
+	width: 100%;
+	height: 168.8px;
+	object-fit: cover
+}
+
+.tip-of-week-container .tip-week-black,
+.tip-of-week-container>a>div {
+	margin: 9px 0 0;
+	padding: 16px 15px 20px
+}
+
+.tip_heading_div {
+	font: bold 32px/1 'Futura PT Bold';
+	color: #3336ad;
+	text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff;
+	letter-spacing: .64px
+}
+
+.tip_heading_div>span:nth-child(odd) {
+	color: #fff
+}
+
+.season-picks-wrapper .color-white-pv {
+	color: #0c0c0f !important;
+	margin: 6px 0 0
+}
+
+.arrow--season {
+	width: 20px;
+	height: 20px;
+	object-fit: contain
+}
+
+.season--grid--sec {
+	margin: 9px 0 0;
+	grid-template-columns: 0.445fr 1fr;
+	gap: 30px
+}
+
+.season--slider--container {
+	background-color: #fff;
+	padding: 16px 20px
+}
+
+.season--grid--sec,
+.select--review--flex {
+	display: grid
+}
+
+.select--review--flex {
+	grid-template-columns: repeat(4, 1fr);
+	gap: 15px;
+	margin: 12px 0 0
+}
+
+.fashion--rewiew--grid {
+	grid-template-columns: 1fr 0.435fr;
+	gap: 45px
+}
+
+.images--article--ent,
+.season--picks--images {
+	width: 100%;
+	aspect-ratio: 3/3;
+	object-fit: cover
+}
+
+.font--rockwell {
+	font: bold 22px Rockwell, serif;
+	color: #0c0c0f;
+	text-transform: lowercase
+}
+
+.select--review--box>a {
+	display: block
+}
+
+.pagination--beauty--review--dots.active,
+.pagination--fashion--dots.active,
+.pagination--lifestyle--dots.active,
+.pagination--new--release--dots.active,
+.pagination--season--dots.active {
+	background-color: #3947f4
+}
+
+.pagination--beauty--review,
+.pagination--fashion,
+.pagination--lifestyle--review,
+.pagination--new--release,
+.pagination--season {
+	justify-content: center;
+	margin: 20px 0 0;
+	cursor: pointer
+}
+
+.pagination--beauty--review--dots,
+.pagination--fashion--dots,
+.pagination--lifestyle--dots,
+.pagination--new--release--dots,
+.pagination--season--dots {
+	width: 5.5px;
+	height: 5.5px;
+	border-radius: 50%;
+	background-color: #ccc;
+	margin: 0 4px
+}
+
+.highlights--month--sec,
+.horoscope--sec--wrapper,
+.lifestyle--section,
+.zodiac--sign--wrapper {
+	margin: 0 auto 20px
+}
+
+.title--font--pv {
+	font: bold 26px 'Futura PT Bold';
+	color: #0c0c0f
+}
+
+.color-white-pv {
+	color: #f5f5fa !important
+}
+
+.head--arrow--pv {
+	display: flex;
+	justify-content: space-between;
+	align-items: center
+}
+
+.lifestyle--bttn--flex {
+	margin: 16px 0 0
+}
+
+.beauty--tab--bttn,
+.ent--tab--bttn--style,
+.fashion--tab--bttn,
+.korean--tab--bttn,
+.lifestyle--bttn,
+.mv--review--bttn,
+.pvk--board--bttn,
+.select--tab--bttn,
+.tech--tab--bttn,
+.top--mv--bttns,
+.tv--health--bttn,
+.tv--tab--bttn {
+	font: 500 15px 'Futura PT Medium';
+	letter-spacing: .84px;
+	text-transform: uppercase;
+	padding: 14px 24px;
+	display: inline;
+	color: #0c0c0f;
+	white-space: nowrap
+}
+
+.active--beauty--bttn,
+.active--bttn--ent,
+.active--fashion--bttn,
+.active--health--bttn,
+.active--korean--bttn,
+.active--select--bttn,
+.active--tech--bttn,
+.active--tv--bttn,
+.lifestyle--active,
+.mv--review--active,
+.pvk--board--bttn.pvk--board--active,
+.top--mv--active {
+	background: #000;
+	border: 1px solid #4b4b4b;
+	font-family: 'Futura PT Demi';
+	color: #f5f5fa
+}
+
+.buttonDiv990,
+.lifertyle--div1>a,
+.lifestyle--div--box>a {
+	display: flex
+}
+
+.lifertyle--div1>a,
+.top-story-div1>a {
+	gap: 20px
+}
+
+.latest-box-container>a,
+.lifestyle--div--box>a {
+	gap: 10px
+}
+
+.exclusive--ad--container {
+	padding: 11px 0 6px;
+	position: relative;
+	border: 1px solid #707070;
+	background-color: #0c0c0f;
+	height: fit-content
+}
+
+.lifertyle--div1--img {
+	aspect-ratio: 5/5;
+	width: 23.4vw;
+	height: 23.4vw;
+	object-fit: cover
+}
+
+.exclusive--ad--container .exclusive--image {
+	width: 100%;
+	height: 12vw;
+	object-fit: cover;
+	margin: 10px 0 0
+}
+
+.red--clr--exc {
+	font: 900 18px/1.28 Gilroy-Medium;
+	background: #d80000;
+	clip-path: polygon(0 0, 100% 0%, 95% 100%, 0% 100%);
+	text-transform: uppercase;
+	letter-spacing: .72px;
+	color: #fff;
+	padding: 5.5px 16.6px 5.5px 8.3px;
+	width: fit-content
+}
+
+.exclusive--ad--container .color-white-pv {
+	padding: 0 15px
+}
+
+.lifestyle--main--flex {
+	gap: 30px;
+	grid-template-columns: repeat(3, 1fr)
+}
+
+.lifestyle--top--flex {
+	grid-template-columns: 1fr 325px;
+	gap: 115px
+}
+
+.lifestyle--main--flex,
+.lifestyle--top--flex {
+	display: grid;
+	margin: 30px 0 0
+}
+
+.discover--section {
+	padding: 30px 0 50px;
+	background-color: #f4f3e7;
+	margin: 0 0 20px
+}
+
+.discover--more--wrapper {
+	margin: 0 auto
+}
+
+.discover--more--flex {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	margin: 16px 0 0
+}
+
+.discover--box {
+	text-align: center;
+	display: block
+}
+
+.discover--images {
+	max-width: 120px;
+	max-height: 120px;
+	border-radius: 50%;
+	object-fit: cover;
+	aspect-ratio: 1/1
+}
+
+.pvk--adv--boxes,
+.zodiac--boxes--div {
+	max-width: fit-content
+}
+
+.discover--titles {
+	font: 18px 'Futura PT Demi';
+	text-transform: uppercase;
+	letter-spacing: .54px;
+	text-align: center;
+	color: #0c0c0f
+}
+
+.exclusive--section--container {
+	background-image: url('../images/exclusive-bg.svg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	margin: 0 0 10px
+}
+
+.exclusive--sec--wrapper {
+	margin: 0 auto;
+	padding: 30px 0 0
+}
+
+.exclusive--main--grid {
+	display: grid;
+	grid-template-columns: 1fr 0.7fr;
+	gap: 53px;
+	margin: 15px 0 0
+}
+
+.esclusive--right--sec,
+.exc--main--div1 {
+	position: relative;
+	box-shadow: 20px 20px 0 0 #fbff54;
+	border: 1px dotted #ccc;
+	background-color: #fff
+}
+
+.esclusive--right--sec {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+	padding: 20px 0 20px 20px;
+	margin: 0 20px 0 0;
+	height: fit-content
+}
+
+.horo--img--boxes>a,
+.horo--tabs--flex {
+	display: flex;
+	gap: 10px
+}
+
+.red--nums--exc {
+	font: 700 16px/1.44 Gilroy;
+	letter-spacing: .64px;
+	padding: 3px 8.9px 2px 15px
+}
+
+.red--num--exc--div,
+.red--nums--exc {
+	background: #d80000;
+	position: absolute;
+	top: 0;
+	right: 0;
+	text-transform: uppercase;
+	clip-path: polygon(0 0, 100% 0%, 100% 100%, 15% 100%);
+	color: #fff
+}
+
+.red--num--exc--div {
+	font: 700 33px/1.09 Gilroy;
+	letter-spacing: 1.32px;
+	padding: 13px 24.4px 11px 32.1px
+}
+
+.exc--div1--content {
+	text-align: center;
+	padding: 13px 45px 28px
+}
+
+.exc--main--div1 .main-article-title-pv {
+	margin: 8px 0 0
+}
+
+.exc--main--div1 .exc--main--img {
+	width: 100%;
+	height: 379.7px;
+	object-fit: cover
+}
+
+.exclusive--right--boxes>a {
+	position: relative;
+	display: flex;
+	gap: 10px
+}
+
+.exc--right--content {
+	padding: 0 40px 0 0
+}
+
+.horo--tabs--flex {
+	border-bottom: 1px solid #4b4b4b;
+	margin: 15px 0 0;
+	height: 100%;
+	width: 100%;
+	overflow-x: auto;
+	overflow-y: hidden
+}
+
+.horo--tabs--flex .horo--tab--bttn {
+	min-width: 160px;
+	font: 500 13px 'Futura PT Medium';
+	background: #ddd;
+	text-transform: uppercase;
+	text-align: center;
+	padding: 14px;
+	white-space: nowrap;
+	letter-spacing: .84px;
+	color: #0c0c0f
+}
+
+.horo--tabs--flex .horo--tab--bttn.active--horo--tab,
+.horo--tabs--flex .horo--tab--bttn:hover {
+	font-family: 'Futura PT Demi';
+	color: #f5f5fa;
+	border: 1px solid #4b4b4b;
+	background-color: #000
+}
+
+.horo--tab--container .horo--content--tab {
+	padding: 30px 0 0
+}
+
+.horo--tab--container .active--horo--tab {
+	display: block
+}
+
+.horo--tab--container .discover--titles {
+	text-align: left
+}
+
+.horo--tab--grid {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 30px;
+	margin: 20px 0 0
+}
+
+.zodiac--boxes--div img,
+.zodiac--images {
+	border-radius: 50%;
+	width: 100%;
+	aspect-ratio: 3/3;
+	object-fit: contain
+}
+
+.zodiac--boxes--div {
+	width: 75%;
+	display: block;
+	text-decoration: none
+}
+
+.zodiac--grid--wrapper {
+	display: grid;
+	grid-template-columns: repeat(6, 1fr);
+	column-gap: 24px;
+	row-gap: 20px;
+	margin: 15px 0 0
+}
+
+.web--story--section {
+	background: #0c0c0f;
+	padding: 25px 0 30px;
+	margin: 0 0 20px
+}
+
+.web--story--container {
+	margin: 0 auto
+}
+
+.webstory--grid--wrapper {
+	display: grid;
+	grid-template-columns: repeat(5, 1fr);
+	gap: 22px;
+	margin: 15px 0 0
+}
+
+.add--container--ent,
+.add--container--ent a img,
+.first--div--ent>a,
+.trailer--movies--window.small--window--movies,
+.web--story--boxes {
+	width: 100%
+}
+
+.webstory--main--images {
+	background: linear-gradient(88deg, rgba(0, 0, 0, .01) 80%, rgba(0, 0, 0, .55) 106%);
+	width: 100%;
+	aspect-ratio: 3/4;
+	object-fit: cover
+}
+
+.webstry--line--div {
+	position: absolute;
+	bottom: 20px;
+	width: 100%;
+	left: 0;
+	z-index: 1;
+	display: flex;
+	justify-content: space-between;
+	padding: 0 10px;
+	align-self: center
+}
+
+.webstry--line--div span {
+	background-color: #fff;
+	display: block;
+	height: 2px;
+	width: 100%;
+	margin: 0 3px 0 0;
+	border-radius: 2px
+}
+
+.webstory--img--div {
+	position: relative
+}
+
+.webstory--icon {
+	position: absolute;
+	width: 26px;
+	height: 25px;
+	object-fit: contain;
+	inset: 16px 0 0 16px
+}
+
+.webstory--bio {
+	font: 500 16px/1.38 'Futura PT Medium'
+}
+
+.webstory--date {
+	margin: 5px 0 0;
+	font: 500 12px/1.92 Gilroy-Medium;
+	letter-spacing: .48px;
+	text-transform: uppercase
+}
+
+.pvk--board--sec {
+	margin: 20px auto;
+	border-bottom: 1px dotted #ccc;
+	padding: 0 0 45px
+}
+
+.pvk--bttn--flex {
+	margin: 15px 0 0;
+	overflow: auto;
+	display: flex;
+	gap: 24px
+}
+
+.tabcontent--pvk--advisory {
+	margin: 30px 0 0;
+	grid-template-columns: repeat(2, 1fr);
+	column-gap: 145px
+}
+
+.subtitle--font--pv {
+	font: bold 24px/1.5 'Futura PT Bold';
+	text-transform: capitalize;
+	color: #0c0c0f
+}
+
+.pvk--adv--title--bio {
+	font: 20px/1.6 Gilroy;
+	letter-spacing: .4px;
+	color: #0c0c0f;
+	margin: 5px 0 0
+}
+
+.pvk--adv--blue {
+	font: 500 14px/1.64 Gilroy-Medium;
+	letter-spacing: .84px;
+	color: #397ff5;
+	gap: 10px;
+	margin: 15px 0 0
+}
+
+.pvk--blue--arrow {
+	width: 14px;
+	height: 10px;
+	object-fit: contain
+}
+
+.pvk--adv--grid {
+	margin: -127px 0 0;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	column-gap: 50px;
+	row-gap: 30px
+}
+
+.pvk--adv--images {
+	display: block;
+	margin: 0 auto;
+	border-radius: 50%;
+	width: 120px;
+	height: 120px;
+	border: .5px solid #e2e2e2;
+	object-fit: cover
+}
+
+.pvk--adv--names {
+	font: bold 18px 'Futura PT Bold';
+	letter-spacing: .36px
+}
+
+.pvk--adv--jobs {
+	font: 500 13px Gilroy-Medium;
+	letter-spacing: .78px
+}
+
+.pvk--adv--jobs,
+.pvk--adv--names {
+	text-align: center;
+	color: #0c0c0f;
+	margin: 7px 0 0;
+	text-transform: capitalize
+}
+
+.box--office--blue--sec {
+	background: #f2f5f7;
+	padding: 18px 0 10px
+}
+
+.box--office--blue--sec .title--font--pv.max-width-sec {
+	margin: 0 auto
+}
+
+.new--release--sec {
+	margin: 10px auto 20px;
+	position: relative
+}
+
+.first--div--ent,
+.new--release--sec .bttn--div--new {
+	display: flex;
+	gap: 20px
+}
+
+.new--release--sec .new--release--flex {
+	display: flex;
+	gap: 20px;
+	margin: 8px 0 0;
+	overflow: auto;
+	overflow-y: hidden
+}
+
+.new--release--sec .new--release--boxes,
+.new--release--sec .new--release--boxes>a {
+	background: #000;
+	display: block;
+	width: 360px;
+	height: fit-content;
+	position: relative
+}
+
+.new--release--sec .new--release--images {
+	width: 360px;
+	height: 202px;
+	object-fit: cover
+}
+
+.new--release--sec .icon--new--release {
+	position: absolute;
+	background: url(../icons/video-icon-mvs.svg) no-repeat;
+	width: 50px;
+	height: 50px;
+	inset: 28% 0 0 40%
+}
+
+.new--release--sec .new--release--content--div {
+	background: #000;
+	padding: 0 10px 8px;
+	margin: auto 0
+}
+
+.new--release--sec .box--movie--name {
+	color: #f5f5fa
+}
+
+.up--movies--name {
+	color: #0c0c0f
+}
+
+.new--release--sec .box--movie--name,
+.up--movies--name {
+	font: bold 20px 'Futura PT Bold';
+	text-decoration: underline
+}
+
+.new--release--sec .box--movie--date {
+	font: 600 15px/1.53 Gilroy;
+	letter-spacing: .23px;
+	color: #f5f5fa
+}
+
+.new--release--sec .star--div--movie {
+	align-items: center;
+	gap: 3px;
+	display: flex
+}
+
+.new--release--sec .rating--num--movie {
+	font: 600 17px/1.35 Gilroy;
+	letter-spacing: .26px;
+	color: #f5f5fa;
+	padding: 2px 0 0
+}
+
+.new--release--sec .rating--star--icon {
+	width: 18.9px;
+	height: 18px;
+	object-fit: contain
+}
+
+.modal--trailer--movies {
+	background: rgba(0, 0, 0, .7);
+	position: fixed;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	display: none;
+	overflow: auto;
+	z-index: 9999;
+	cursor: pointer
+}
+
+.trailer--movies--window {
+	position: relative;
+	width: 100%;
+	margin: 35% 0 0;
+	height: 40%;
+	padding: 0 20px
+}
+
+.close--modal--movies {
+	bottom: 90%;
+	right: 20px;
+	text-align: center;
+	position: absolute;
+	transition: .2s;
+	font-size: 35px;
+	text-decoration: none;
+	color: #fff;
+	top: -40px;
+	height: 5px
+}
+
+.highlights--month--sec .star--of--month--grid {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 20px
+}
+
+.highlights--month--sec .hlts--img--anchor {
+	width: 159px;
+	height: auto
+}
+
+.highlights--month--sec .hlts--images {
+	width: 159px;
+	height: 100%;
+	object-fit: cover
+}
+
+.highlights--month--sec .star--of--month {
+	height: 220px;
+	display: flex;
+	width: 100%;
+	background-color: #14161c
+}
+
+.highlights--month--sec .flex--hlts--cont {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between
+}
+
+.highlights--month--sec .star-name {
+	font: bold 20px 'Futura PT Bold';
+	margin: 6px 0 0 9px;
+	color: #f5f5fa
+}
+
+.highlights--month--sec .movie-month-genre,
+.highlights--month--sec .mvreview--rating--num,
+.highlights--month--sec .star-detail-left {
+	color: #cacad0
+}
+
+.highlights--month--sec .star-details-list {
+	margin: 2px 0 0 9px
+}
+
+.highlights--month--sec .rating--div--mvreview {
+	font-size: 23px;
+	margin: 0 0 3px 9px
+}
+
+.highlights--month--sec .cast-stars-movies,
+.highlights--month--sec .movie-month-genre,
+.highlights--month--sec .star-detail-left {
+	font: 500 15px/1.53 Gilroy-Medium;
+	letter-spacing: .23px
+}
+
+.highlights--month--sec .cast-details-month,
+.highlights--month--sec .movie-month-genre {
+	margin: 0 0 0 9px
+}
+
+.highlights--month--sec .cast-stars-movies {
+	color: #f5f5fa
+}
+
+.highlights--month--sec .star-detail-right {
+	font: 500 15px/1.4 Gilroy-Medium;
+	letter-spacing: .23px;
+	color: #f5f5fa
+}
+
+.highlights--month--sec .star-net-worth {
+	font: bold 15px/1.53 Gilroy;
+	background: #2e2e5d;
+	padding: 4px 0 4px 9px;
+	margin: 5px 0 0;
+	width: 100%;
+	text-transform: uppercase;
+	letter-spacing: .23px;
+	color: #f5f5fa
+}
+
+.highlights--month--sec .collection-div-movies {
+	margin: 2px 0 0;
+	background-color: #ffd800
+}
+
+.highlights--month--sec .collection-text {
+	font: bold 14px/1.64 Gilroy;
+	text-transform: uppercase;
+	white-space: nowrap;
+	letter-spacing: .78px;
+	color: #0c0c0f;
+	padding: 4px 8px
+}
+
+.highlights--month--sec .cast-stars-movies,
+.highlights--month--sec .star-detail-left {
+	display: unset
+}
+
+.highlights--month--sec .read-more-container-month {
+	border: 1px solid #eaeaea;
+	background-color: #fff;
+	padding: 7px
+}
+
+.highlights--month--sec .read-more-style {
+	font: 500 15px/1.4 Gilroy-Medium;
+	letter-spacing: .23px;
+	color: #707070
+}
+
+.highlights--month--sec .read-bttn-month {
+	font: 13px 'Futura PT Demi';
+	text-transform: uppercase;
+	position: relative;
+	letter-spacing: .78px;
+	color: #387ef1
+}
+
+.highlights--month--sec .read-bttn-month::after {
+	content: "";
+	position: absolute;
+	top: 53%;
+	right: -10px;
+	border-style: solid;
+	border-width: 5.5px 5.5px 0;
+	border-color: #387ef1 transparent transparent;
+	transition: transform .3s;
+	transform: translateY(-50%) rotate(270deg)
+}
+
+.white--bg--movies {
+	background: #fff;
+	border: 1px solid #e2e2e2;
+	padding: 0;
+	margin: 0 auto
+}
+
+.movie--month--section,
+.up--movies--section {
+	margin: 20px 30px
+}
+
+.up--movies--section .up--movies--flex--wrapper {
+	margin: 10px 0 0;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	flex-wrap: wrap;
+	column-gap: 29px;
+	row-gap: 35px
+}
+
+.exc--videos--div,
+.excl--video--images,
+.up--movies--section .up--movies--boxes,
+.up--movies--section .up--movies--images {
+	width: 100%;
+	position: relative
+}
+
+.up--movies--section .up--movies--images {
+	height: 202px;
+	object-fit: cover
+}
+
+.up--movies--section .icon--up--movies {
+	position: absolute;
+	background: url(../icons/video-icon-mvs.svg) 0 0/50px 50px no-repeat;
+	inset: 27% 0 0 45%;
+	width: 50px;
+	height: 50px;
+	object-fit: contain;
+	cursor: pointer
+}
+
+.up--movies--genre {
+	font: 500 15px/1.53 Gilroy-Medium;
+	letter-spacing: .09px;
+	color: #707070
+}
+
+.up--movies--section .up--movies--date {
+	font: 13px/1.77 Gilroy-Medium;
+	background: #15a3a8;
+	text-transform: uppercase;
+	margin: 5px 0 0;
+	padding: 2px 7px 2px 6px;
+	width: fit-content;
+	letter-spacing: .65px;
+	color: #fff
+}
+
+.mv--review--bttn-div {
+	display: flex;
+	margin: 10px 0 0;
+	gap: 20px;
+	overflow: auto
+}
+
+.tabcontent--mv--review {
+	grid-template-columns: repeat(3, 1fr);
+	column-gap: 20px;
+	row-gap: 30px;
+	margin: 30px 0 0
+}
+
+.movie--review--boxes {
+	background: #f2f5f7;
+	display: flex;
+	width: 100%;
+	border: 1px solid #eaeaea
+}
+
+.mv--review--images {
+	width: 130px;
+	height: auto;
+	object-fit: cover
+}
+
+.mv--review--content--div {
+	padding: 13px 0 13px 10px
+}
+
+.mv--review--name {
+	line-height: 1.25
+}
+
+.mv--review--genre {
+	font: 500 15px/1.53 Gilroy-Medium;
+	letter-spacing: .09px;
+	color: #707070
+}
+
+.rating--div--mvreview {
+	display: flex;
+	align-items: baseline;
+	font-size: 20px;
+	margin: 3px 0 0
+}
+
+.rating--div--mvreview::before {
+	--rating-percent: calc(var(--rating-value) / var(--rating-max) * 100%);
+	content: var(--rating-content);
+	background: linear-gradient(90deg, var(--rating-background) var(--rating-percent), var(--rating-inactive-color) var(--rating-percent));
+	background-clip: text;
+	-webkit-background-clip: text;
+	color: transparent
+}
+
+.mvreview--rating--num {
+	font: 600 15px/1.53 Gilroy;
+	letter-spacing: .23px;
+	color: #0c0c0f
+}
+
+.mvvreview--cast {
+	font: 500 15px/1.53 Gilroy-Medium;
+	letter-spacing: .23px;
+	color: #303030
+}
+
+.top--mvs--section {
+	margin: 20px 0 20px 30px
+}
+
+.top--mvs--section .head--arrow--pv,
+.top--mvs--section .top--mvs--subtitle {
+	margin: 0 30px 0 0
+}
+
+.top--movies--wrapper {
+	margin: 5px 0 0
+}
+
+.top--mvs--subtitle {
+	font: 20px 'Futura PT Demi';
+	text-transform: uppercase;
+	letter-spacing: .6px;
+	color: #0c0c0f
+}
+
+.tabcontent--top--mv {
+	overflow: auto;
+	overflow-y: hidden;
+	-webkit-overflow-scrolling: touch;
+	margin: 30px 0 0;
+	padding: 0 24px 0 0;
+	gap: 24px
+}
+
+.top--mv--boxes {
+	display: block;
+	width: 170px;
+	position: relative
+}
+
+.top--mv--images {
+	width: 170px;
+	height: 244px;
+	object-fit: cover
+}
+
+.red--top--div {
+	top: 0;
+	left: 10px;
+	position: absolute;
+	filter: drop-shadow(2px 5px 2px rgba(0, 0, 0, .16))
+}
+
+.red--num--top--mv {
+	font: 25px 'Futura PT Bold';
+	background: #e30000;
+	position: absolute;
+	top: 0;
+	color: #fff;
+	padding: 1.5px 8px 7.5px;
+	clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 89%)
+}
+
+.article--tab--sections {
+	padding: 0px
+}
+
+.article--tab--sections,
+.exclusive--videos--sec {
+	margin: 0 auto 20px;
+}
+
+.article--tab--div--flex {
+	margin: 10px 0 0;
+	overflow: auto;
+	display: flex;
+	gap: 15px
+}
+
+.tabcontent--entertainment,
+.tabcontent--health,
+.tabcontent--lifestyle,
+.tabcontent--tv {
+	margin: 30px 0 0
+}
+
+.entertainment--top--grid {
+	display: grid;
+	grid-template-columns: 1fr 0.43fr;
+	gap: 170px
+}
+
+.first--div--content--ent {
+	max-width: 340px
+}
+
+.entertainment--bottom--grid {
+	display: grid;
+	grid-template-columns: repeat(5, 1fr);
+	gap: 25px
+}
+
+.article--side--tab--grid,
+.exclusive--video--wrapper,
+.explore--more--wrapper {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr)
+}
+
+.article--div--entertainment>a {
+	display: block
+}
+
+.article--tab--sections .main-article-time-pv {
+	margin: 10px 0 0
+}
+
+.article--side--tab--section {
+	margin: 0 auto 20px
+}
+
+.tabcontent--beauty,
+.tabcontent--fashion,
+.tabcontent--korean,
+.tabcontent--select,
+.tabcontent--tech {
+	margin: 30px 0 0
+}
+
+.article--side--tab--grid {
+	row-gap: 30px;
+	column-gap: 28px
+}
+
+.article--korean--div>a,
+.article--select--div>a {
+	display: flex;
+	gap: 10px
+}
+
+.article--korean--div .latest-images,
+.article--select--div .latest-images {
+	margin: auto 0
+}
+
+.exclusive--videos--sec {
+	border-bottom: 1px dotted #ccc;
+	padding: 0 0 30px
+}
+
+.exclusive--video--wrapper {
+	column-gap: 48px;
+	row-gap: 30px;
+	margin: 10px 0 0
+}
+
+.excl--video--images {
+	height: 207px;
+	object-fit: cover
+}
+
+.exc--videos-img--div {
+	position: relative
+}
+
+.excl--video--icon {
+	position: absolute;
+	background: url(../icons/video-icon-mvs.svg) 0 0/50px 50px no-repeat;
+	transform: translate(-50%, -50%);
+	top: 50%;
+	left: 50%;
+	width: 50px;
+	height: 50px;
+	object-fit: contain;
+	cursor: pointer
+}
+
+.Explore_more_mvs {
+	margin: 0 auto 50px
+}
+
+.explore--more--wrapper {
+	gap: 30px;
+	margin: 10px 0 0
+}
+
+.article--div--entertainment,
+.explore--box--article {
+	position: relative
+}
+
+.explore--box--article img {
+	width: 100%;
+	object-fit: cover;
+	height: 285px;
+	background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, .7) 85%)
+}
+
+.explore_content {
+	position: absolute;
+	bottom: 20px;
+	padding: 0 10px 0 20px
+}
+
+.explore_content_head {
+	font: bold 20px 'Futura PT Bold';
+	color: #f5f5fa
+}
+
+.explore_content_para {
+	font: 500 15px/1.53 Gilroy-Medium;
+	letter-spacing: .26px;
+	color: #f5f5fa;
+	margin: 4px 0 0
+}
+
+.explore_content_anchor {
+	font: 14px 'Futura PT Demi';
+	text-transform: uppercase;
+	letter-spacing: .84px;
+	color: #f5f5fa
+}
+
+.explore--more--arrow--flex {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	margin: 10px 0 0
+}
+
+.explore--more--arrow--flex .arrow--exp--img {
+	width: 5px;
+	height: 8.1px;
+	object-fit: contain
+}
+
+.hit--flop--wrapper {
+	background: #fff;
+	position: relative;
+	border: 1px solid #e2e2e2;
+	padding: 11px 15px 9px
+}
+
+.predict--bar--heading {
+	font: 22px 'Futura PT Bold';
+	color: #0c0c0f
+}
+
+.hit--flop--container {
+	margin: 10px 0 0
+}
+
+.audience--poll--screen.aud--poll--active--screen,
+.collapsible_bttn_header,
+.dropbtn-header,
+.hit--flop--boxes.active,
+.slider--line--div span {
+	display: block
+}
+
+.hit--flop--img--div {
+	padding: 17px 0;
+	width: 100%;
+	background: #000
+}
+
+.hit--flop--img--div img {
+	width: 100%;
+	height: 194.1px;
+	margin: auto 0;
+	object-fit: cover
+}
+
+.movie--name--div--hf {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 9px 0 0;
+	gap: 5px
+}
+
+.movie--name--hf {
+	font: bold 18px/1.39 'Futura PT Bold';
+	color: #0c0c0f;
+	text-decoration: underline;
+	text-align: center;
+	text-transform: capitalize
+}
+
+.main-article-time-pv,
+.predict--nxt--mv--btn,
+.progress--style,
+.red--clr--artv2,
+.sliders--numbers {
+	text-transform: uppercase
+}
+
+.movie--earning--hf {
+	font: 500 13px/1.23 Gilroy-Medium;
+	letter-spacing: .26px;
+	color: #73737c;
+	text-align: center
+}
+
+.slider--div--hf {
+	background: #f2f5f7;
+	position: relative;
+	margin: 9px 0 0;
+	padding: 18px 15px 5px
+}
+
+.slider--line--div {
+	display: flex;
+	justify-content: space-between;
+	padding: 0;
+	align-items: center
+}
+
+.slider--line--div span {
+	background: #707070;
+	height: 10px;
+	width: 1px
+}
+
+.range-slider--hf {
+	background: #fff;
+	display: flex;
+	-webkit-appearance: none;
+	width: 100%;
+	--thumb-width: 12px
+}
+
+.range-slider--hf,
+.range-slider--hf::-webkit-slider-runnable-track {
+	height: 10px;
+	border: 1px solid #8dc1ff
+}
+
+.range-slider--hf::-webkit-slider-runnable-track {
+	background: linear-gradient(to right, #8dc1ff 0, #8dc1ff calc(var(--scroll-percentage) * 100%), #ffff calc(var(--scroll-percentage) * 100%), #fff 100%)
+}
+
+.range-slider--hf::-moz-range-track {
+	height: 10px;
+	background: linear-gradient(to right, #8dc1ff 0, #8dc1ff calc(var(--scroll-percentage) * 100%), #fff calc(var(--scroll-percentage) * 100%), #fff 100%)
+}
+
+.range-slider--hf::-webkit-slider-thumb {
+	background: #fff;
+	-webkit-appearance: none;
+	appearance: none;
+	cursor: pointer;
+	width: 18px;
+	height: 18px;
+	border-radius: 50%;
+	transform: translate(0, -5px);
+	box-shadow: 0 0 6px 0 rgba(0, 0, 0, .16);
+	border: 3.1px solid #1259ce
+}
+
+.slider--bottom--num {
+	justify-content: space-between;
+	display: flex;
+	align-items: center
+}
+
+.sliders--numbers {
+	font: 12px/2.08 'Futura PT Demi';
+	color: #0c0c0f
+}
+
+.range-value {
+	font: 12px 'Futura PT Demi';
+	background: #242d31;
+	position: absolute;
+	top: 0;
+	padding: 2px 3px 13px;
+	box-shadow: 0 0 6px 0 rgba(0, 0, 0, .16);
+	border: 1px solid #fff;
+	clip-path: polygon(100% 0, 100% 59%, 62% 61%, 53% 100%, 39% 61%, 0 61%, 0 0);
+	text-align: center;
+	color: #fff;
+	white-space: nowrap;
+	z-index: 99
+}
+
+.vote--txt--hf {
+	font: 500 12px/1.33 Gilroy-Medium;
+	letter-spacing: .24px;
+	color: #73737c;
+	text-align: right;
+	margin: 9px 0 0
+}
+
+.aud--prev--screen,
+.prev--screen--hf {
+	left: 27px
+}
+
+.aud--next--screen,
+.next--screen--hf {
+	right: 27px
+}
+
+.aud--next--screen,
+.aud--prev--screen,
+.next--screen--hf,
+.prev--screen--hf {
+	position: absolute;
+	top: 33%
+}
+
+.prediction--bar--wrapper--hf {
+	padding: 10px 15px 28px;
+	border: 1px solid #e2e2e2;
+	background-color: #fff
+}
+
+.predict--hf--result--img {
+	margin: 25px 0 0;
+	width: 100%;
+	height: 200px;
+	object-fit: contain
+}
+
+.aud--hit--hf {
+	font: 600 13px/1.23 Gilroy;
+	letter-spacing: .26px;
+	text-align: center;
+	color: #0c0c0f
+}
+
+.aud--result--hf {
+	font: 11px 'Futura PT Demi';
+	background: rgba(29, 250, 80, .2);
+	color: #53b445;
+	padding: 1px 7px 1px 5px;
+	border: .5px solid #62c554
+}
+
+.flex--aud--result {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 5px
+}
+
+.flex--aud--result,
+.prediction--bar--wrapper--hf .movie--earning--hf,
+.prediction--bar--wrapper--hf .movie--name--hf {
+	margin: 18px 0 0
+}
+
+.walkthrough-body-990 {
+	position: relative;
+	padding: 11px 15px 8px;
+	border: 1px solid #e2e2e2;
+	background-color: #fff
+}
+
+.aud--poll--container .movie--name--hf,
+.screens890 {
+	margin: 10px 0 0
+}
+
+.bttn--flex--aud {
+	flex-direction: column;
+	gap: 20px;
+	margin: 25px 0 11px
+}
+
+.bttn--style--aud--poll,
+.predict--nxt--mv--btn {
+	background: #fff;
+	border: 1px solid #ccc;
+	color: #0c0c0f
+}
+
+.predict--nxt--mv--btn {
+	margin: 30px 0 0;
+	cursor: pointer
+}
+
+.submit--bttn--hf {
+	background: #3c8739;
+	color: #fff;
+	margin: 18px 0 0
+}
+
+#header,
+.meter {
+	background: #fff
+}
+
+.bttn--style--aud--poll,
+.predict--nxt--mv--btn,
+.submit--bttn--hf {
+	font: bold 14px 'Futura PT Bold';
+	padding: 11px 0;
+	width: 100%;
+	letter-spacing: .84px;
+	text-align: center;
+	text-transform: uppercase
+}
+
+.flex--result--movies--sec {
+	padding: 0 30px;
+	margin: 30px 0 0;
+	gap: 20px;
+	display: grid;
+	grid-template-columns: 1fr 1fr 0fr
+}
+
+.data--num,
+.progress--style {
+	position: absolute;
+	transform: translate(0, -50%);
+	transition: width 2s ease-out;
+	top: 50%;
+	white-space: nowrap
+}
+
+.data--num {
+	font: 13px/1.92 'Futura PT Demi';
+	right: 10px;
+	color: #0c0c0f
+}
+
+.progress--style {
+	font: 14px 'Futura PT Bold';
+	left: 10px;
+	letter-spacing: .84px;
+	color: #0c0c0f
+}
+
+.meter {
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	display: block;
+	height: 41.2px;
+	border-radius: 2px;
+	border: 1px solid #8dc1ff;
+	position: relative
+}
+
+.meter .data--progress--bar {
+	display: block;
+	height: 100%;
+	width: 0;
+	background-color: #8dc1ff;
+	background-image: linear-gradient(to top, #8dc1ff 37%, #8dc1ff 69%);
+	overflow: hidden;
+	transition: width 2s ease-out
+}
+
+.ad-box-head,
+.max-width-sec {
+	max-width: 1200px
+}
+
+.ad-box-head,
+.header-full-flex-container {
+	max-width: 1200px;
+	margin: 0 auto
+}
+
+.center--ads {
+	background-color: #f7f7f7;
+	min-height: 300px;
+	margin: 0 auto 30px
+}
+
+@media (max-width:1550px) {
+
+	.ad-box-head,
+	.max-width-sec {
+		max-width: 1150px
+	}
+}
+
+@media (max-width:1480px) {
+
+	.ad-box-head,
+	.max-width-sec {
+		max-width: 1100px
+	}
+
+	.move--right {
+		right: 0
+	}
+}
+
+@media (max-width:1430px) {
+
+	.ad-box-head,
+	.max-width-sec {
+		max-width: 1050px
+	}
+}
+
+@media (max-width:1380px) {
+
+	.ad-box-head,
+	.max-width-sec {
+		max-width: 1000px
+	}
+}
+
+@media (max-width:1330px) {
+
+	.ad-box-head,
+	.max-width-sec {
+		max-width: 950px
+	}
+}
+
+@media (max-width:1300px) {
+
+	.ad-box-head,
+	.max-width-sec {
+		max-width: 1200px
+	}
+}
+
+@media (max-width:1200px) {
+
+	.exclusive--main--grid,
+	.first--div--ent,
+	.highlights--month--sec .star--of--month--grid,
+	.horo--tab--grid,
+	.latest-grid-sec,
+	.lifertyle--div1>a,
+	.lifestyle--main--flex,
+	.lifestyle--top--flex,
+	.season--grid--sec,
+	.top-story-div1>a,
+	.top-story-flex,
+	.top-story-grid {
+		display: flex;
+		flex-direction: column
+	}
+
+	.highlights--month--sec .collection-div-movies,
+	.lifertyle--div1--img,
+	.season-pick-img,
+	.select--review--flex,
+	.tip-of-week-container img,
+	.top-story-div1>a {
+		width: 100%
+	}
+
+	.article--tab--div--flex,
+	.entertainment--top--grid,
+	.lifestyle--main--flex,
+	.mv--review--bttn-div,
+	.pvk--bttn--flex,
+	.top-story-flex,
+	.top-story-grid {
+		gap: 0
+	}
+
+	.esclusive--right--sec,
+	.horo--tab--grid,
+	.lifestyle--top--flex,
+	.pvk--adv--wrapper,
+	.season--grid--sec,
+	.select--review--flex,
+	.tabcontent--pvk--advisory {
+		gap: 20px
+	}
+
+	.lifestyle--main--flex,
+	.lifestyle--top--flex,
+	.select--review--flex,
+	.tabcontent--beauty,
+	.tabcontent--entertainment,
+	.tabcontent--fashion,
+	.tabcontent--health,
+	.tabcontent--korean,
+	.tabcontent--select,
+	.tabcontent--tech,
+	.tabcontent--tv,
+	.tabcontent--sports {
+		margin: 20px 0 0
+	}
+
+	.article--tab--sections,
+	.exclusive--section--container,
+	.exclusive--videos--sec,
+	.lifestyle--section,
+	.pvk--board--sec,
+	.zodiac--sign--wrapper {
+		margin: 0 16px 20px
+	}
+
+	.esclusive--right--sec,
+	.highlights--month--sec .collection-div-movies,
+	.pvk--adv--grid,
+	.top-story-flex {
+		margin: 0
+	}
+
+	.first--div--ent,
+	.header-log-div,
+	.lifertyle--div1>a,
+	.top-story-div1>a {
+		gap: 5px
+	}
+
+	.lifertyle--div1,
+	.lifestyle--div--box,
+	.top-story-div,
+	.top-story-div1 {
+		border-bottom: 1px dotted #ccc
+	}
+
+	.discover--section,
+	.horoscope--sec--wrapper,
+	.season-picks-wrapper,
+	.web--story--section {
+		margin: 0 0 20px
+	}
+
+	.add--container--ent,
+	.add--container--ent a img,
+	.dropdown-container-head,
+	.highlights--month--sec .none--hlts--mobile,
+	.lifestyle--div--box:empty,
+	.webstry--line--div span:nth-last-child(-n+3) {
+		display: none
+	}
+
+	.esclusive--right--sec,
+	.exc--main--div1,
+	.header-section-pv {
+		border: none
+	}
+
+	.season-pick-header,
+	.select--review--box>a,
+	.top-story-div>a {
+		display: flex
+	}
+
+	.latest-images,
+	.season--picks--images,
+	.top_story_images {
+		width: 110px;
+		height: 110px
+	}
+
+	.latest-section-wrapper,
+	.top-stories-pv {
+		margin: 20px 16px
+	}
+
+	.div1-content,
+	.top-story-grid {
+		padding: 0
+	}
+
+	.article--tab--sections,
+	.exclusive--videos--sec,
+	.lifertyle--div1 {
+		padding: 0 0 30px
+	}
+
+	.exc--main--div1 .exc--main--img,
+	.exclusive--ad--container .exclusive--image {
+		height: 180px
+	}
+
+	.discover--more--wrapper,
+	.horoscope--sec--wrapper .head--arrow--pv {
+		margin: 0 16px
+	}
+
+	.top-story-div,
+	.top-story-div:first-child {
+		border-left: none;
+		padding: 10px 0
+	}
+
+	.pvk--board--sec {
+		padding: 0 0 20px
+	}
+
+	.top-story-div1 {
+		padding: 0 0 15px
+	}
+
+	.lifestyle--bttn--flex,
+	.season--grid--sec {
+		margin: 10px 0 0
+	}
+
+	.tip-of-week-container .tip-week-black,
+	.tip-of-week-container>a>div {
+		padding: 14px 12px 12px
+	}
+
+	.discover--more--flex,
+	.latest-grid-sec {
+		gap: 30px
+	}
+
+	.entertainment--top--grid,
+	.tabcontent--pvk--advisory {
+		grid-template-columns: 1fr
+	}
+
+	.head--arrow--season,
+	.select--review--flex {
+		padding: 0 16px
+	}
+
+	.esclusive--right--sec,
+	.exc--main--div1 {
+		box-shadow: 9px 9px 0 0 #fbff54
+	}
+
+	.highlights--month--sec .cast-details-month,
+	.highlights--month--sec .movie-month-genre {
+		margin: 4px 0 0 9px
+	}
+
+	.Explore_more_mvs,
+	.article--side--tab--section {
+		margin: 0 16px 30px
+	}
+
+	.top_story_first_image {
+		max-width: 700px;
+		max-height: 500px
+	}
+
+	.header-section-pv {
+		margin: 0 0 10px
+	}
+
+	.modal-content-header {
+		width: calc(100% - 74px)
+	}
+
+	.header-full-flex-container {
+		padding: 9px 15px
+	}
+
+	.hamburger-img {
+		width: 32px;
+		height: 32px
+	}
+
+	.pvk-logo {
+		width: 121.7px;
+		height: 31.4px
+	}
+
+	.ad-box-head {
+		height: 82px;
+		padding: 5px 20px 10px
+	}
+
+	.add-images {
+		height: 50px
+	}
+
+	.top-story-grid {
+		border-top: none
+	}
+
+	.top-story-div>a {
+		gap: 8px
+	}
+
+	.div1-content {
+		max-width: 100%
+	}
+
+	.latest-head-img {
+		width: 200px;
+		height: 58.7px;
+		margin: 0 auto
+	}
+
+	.latest-box-container>a {
+		border-right: none
+	}
+
+	.explore-more-ltst {
+		margin: 30px 0 0
+	}
+
+	.season-picks-wrapper {
+		padding: 10px 0 20px
+	}
+
+	.season-pick-img {
+		top: 15%;
+		left: 0;
+		height: 40px
+	}
+
+	.season-pick-header {
+		justify-content: center
+	}
+
+	.tip-of-week-container img {
+		height: 225px
+	}
+
+	.season-pick-bg {
+		width: 250px;
+		height: 60px
+	}
+
+	.select--review--box>a {
+		gap: 10px;
+		width: 82vw
+	}
+
+	.head--arrow--season>a>img {
+		width: 21px;
+		height: 15px
+	}
+
+	.select--review--flex {
+		display: -webkit-inline-box;
+		overflow: auto
+	}
+
+	.season--slider--container {
+		padding: 20px 0 15px
+	}
+
+	.tip-of-week-container {
+		padding: 20px 17px
+	}
+
+	.exclusive--ad--container {
+		padding: 10px 0 6px;
+		position: relative
+	}
+
+	.lifertyle--div1--img {
+		height: 328px
+	}
+
+	.lifestyle--div--box {
+		padding: 20px 0
+	}
+
+	.horo--tab--container .horo--content--tab {
+		padding: 20px 0 0;
+		margin: 0 20px
+	}
+
+	.lifestyle--div--box:first-child {
+		border-top: 1px dotted #ccc
+	}
+
+	.discover--more--flex {
+		justify-content: start
+	}
+
+	.exclusive--sec--wrapper {
+		padding: 20px 0 10px
+	}
+
+	.exclusive--main--grid {
+		gap: 23px;
+		margin: 7px 9px 0 0
+	}
+
+	.esclusive--right--sec {
+		padding: 14px 0 14px 10px
+	}
+
+	.exc--div1--content {
+		padding: 5px 8px 10px
+	}
+
+	.exc--right--content {
+		padding: 0 15px 0 0
+	}
+
+	.horo--tabs--flex {
+		padding: 0 17px
+	}
+
+	.web--story--section {
+		padding: 20px 16px 40px
+	}
+
+	.highlights--month--sec {
+		margin: 0 16px 16px
+	}
+
+	.highlights--month--sec .star--of--month--grid {
+		gap: 12px
+	}
+
+	.highlights--month--sec .hlts--images,
+	.highlights--month--sec .hlts--img--anchor {
+		width: 114.1px;
+		height: 158px
+	}
+
+	.highlights--month--sec .star--of--month {
+		height: fit-content
+	}
+
+	.highlights--month--sec .flex--hlts--cont {
+		justify-content: flex-start
+	}
+
+	.highlights--month--sec .read-more-container-month {
+		border: 1px solid #eaeaea;
+		padding: 9px
+	}
+
+	.white--bg--movies {
+		padding: 19px 0 0
+	}
+
+	.first--div--content--ent {
+		max-width: fit-content
+	}
+
+	.entertainment--bottom--grid {
+		margin: 15px 0 0 !important;
+		row-gap: 20px;
+		column-gap: 15px
+	}
+
+	.article--korean--div .latest-images,
+	.article--select--div .latest-images {
+		margin: auto 0
+	}
+
+	.exclusive--video--wrapper {
+		gap: 17px;
+		margin: 5px 0 0
+	}
+
+	.excl--video--images {
+		height: 184.5px
+	}
+
+	.center--ads {
+		height: 300px;
+		margin: 0 30px 20px
+	}
+
+	.dropbtn-header-what {
+		width: 100px;
+		display: inline-block
+	}
+}
+
+@media (max-width:950px) {
+
+	.flex--result--movies--sec,
+	.link_PAB_mobile {
+		display: flex
+	}
+
+	.pvk--adv--jobs,
+	.pvk--adv--names {
+		margin: 4px 0 0
+	}
+
+	.pvk--adv--boxes {
+		margin: auto
+	}
+
+	.tabcontent--pvk--advisory {
+		margin: 24px 0 0
+	}
+
+	.pvk--adv--grid {
+		column-gap: 2rem;
+		row-gap: 20px
+	}
+
+	.link_PAB_desktop {
+		display: none !important
+	}
+
+	.link_PAB_mobile {
+		justify-content: center;
+		margin: 10px 0 0
+	}
+
+	.tabcontent--mv--review {
+		grid-template-columns: 1fr 1fr
+	}
+
+	.movie--month--section {
+		margin: 25px 16px 23px
+	}
+
+	.up--movies--section {
+		padding: 0;
+		margin: 0 16px
+	}
+
+	.top--mvs--section {
+		margin: 0 0 0 16px
+	}
+
+	.top--mvs--section .head--arrow--pv,
+	.top--mvs--section .top--mvs--subtitle {
+		margin: 0 16px 0 0
+	}
+
+	.top--movies--wrapper {
+		margin: 8px 0 0
+	}
+
+	.tabcontent--top--mv {
+		padding: 0 15px 0 0;
+		margin: 20px 0 0;
+		gap: 15px
+	}
+
+	.flex--result--movies--sec {
+		padding: 0;
+		margin: 30px 16px 0;
+		gap: 20px;
+		flex-direction: column
+	}
+}
+
+@media (max-width:850px) {
+
+	.entertainment--bottom--grid,
+	.exclusive--video--wrapper {
+		grid-template-columns: repeat(2, 1fr)
+	}
+
+	.images--article--ent {
+		width: 100%
+	}
+
+	.article--side--tab--grid,
+	.explore--more--wrapper {
+		grid-template-columns: 1fr
+	}
+
+	.article--side--tab--grid {
+		gap: 0
+	}
+
+	.explore--more--wrapper {
+		gap: 15px
+	}
+
+	.article--korean--div,
+	.article--select--div {
+		border-bottom: 1px dotted #ccc;
+		padding: 10px 0
+	}
+
+	.article--korean--div:last-child,
+	.article--select--div:last-child {
+		border-bottom: none;
+		padding: 10px 0 0
+	}
+
+	.article--korean--div:first-child,
+	.article--select--div:first-child {
+		padding: 0 0 10px
+	}
+}
+
+@media (max-width:767px) {
+	.article-time-pv {
+		font: 500 11px/2.3 Gilroy-Medium;
+		letter-spacing: .4px
+	}
+
+	.article-title-pv {
+		font: 500 12px/1.3 Gilroy-Medium;
+		letter-spacing: .4px
+	}
+
+	.beauty--tab--bttn,
+	.ent--tab--bttn--style,
+	.fashion--tab--bttn,
+	.horo--tabs--flex .horo--tab--bttn,
+	.korean--tab--bttn,
+	.lifestyle--bttn,
+	.mv--review--bttn,
+	.pvk--board--bttn,
+	.select--tab--bttn,
+	.tech--tab--bttn,
+	.top--mv--bttns,
+	.tv--health--bttn,
+	.tv--tab--bttn,
+	.up--movies--section .up--movies--date {
+		font-size: 14px
+	}
+
+	.beauty--tab--bttn,
+	.ent--tab--bttn--style,
+	.fashion--tab--bttn,
+	.korean--tab--bttn,
+	.lifestyle--bttn,
+	.mv--review--bttn,
+	.pvk--board--bttn,
+	.select--tab--bttn,
+	.tech--tab--bttn,
+	.top--mv--bttns,
+	.tv--health--bttn,
+	.tv--tab--bttn {
+		padding: 9px 19px;
+		letter-spacing: .72px
+	}
+
+	.highlights--month--sec .cast-stars-movies,
+	.highlights--month--sec .movie-month-genre,
+	.highlights--month--sec .read-more-style,
+	.highlights--month--sec .star-detail-left,
+	.highlights--month--sec .star-detail-right,
+	.mv--review--genre,
+	.mvreview--rating--num,
+	.mvvreview--cast {
+		font-size: 14px
+	}
+
+	.highlights--month--sec .star-name,
+	.new--release--sec .box--movie--name,
+	.pvk--adv--names,
+	.red_clr_ltst,
+	.up--movies--name {
+		font-size: 18px
+	}
+
+	.subtitle--font--pv {
+		font-size: 22px
+	}
+
+	.exc--main--div1 .exc--div1--content {
+		text-align: unset
+	}
+
+	.images--article--ent,
+	.top_story_first_image {
+		height: auto
+	}
+
+	.discover--titles,
+	.pvk--adv--title--bio,
+	.top--mvs--subtitle {
+		font-size: 16px
+	}
+
+	.exp-bttn-ltst,
+	.highlights--month--sec .collection-text,
+	.highlights--month--sec .star-net-worth,
+	.red--nums--exc {
+		font-size: 13px
+	}
+
+	.div1-content .main-article-content-pv,
+	.highlights--month--sec .subtitle--font--pv,
+	.title--font--pv {
+		font-size: 24px
+	}
+
+	.font--rockwell,
+	.red-bg-ltst {
+		font-size: 20px
+	}
+
+	.highlights--month--sec .star-net-worth,
+	.main-article-content-pv,
+	.rating--div--mvreview {
+		margin: 0
+	}
+
+	.discover--titles,
+	.main-article-time-pv,
+	.main-article-title-pv {
+		letter-spacing: .48px
+	}
+
+	.new--release--sec .new--release--boxes,
+	.new--release--sec .new--release--boxes>a,
+	.new--release--sec .new--release--images {
+		width: 292.8px
+	}
+
+	.tip_heading_div {
+		font-size: 28px
+	}
+
+	.main-article-time-pv,
+	.main-article-title-pv {
+		font-size: 12px;
+		line-height: 1.92
+	}
+
+	.article-content-pv,
+	.webstory--bio {
+		line-height: 1.33
+	}
+
+	.highlights--month--sec .collection-text,
+	.highlights--month--sec .star-net-worth {
+		text-align: center
+	}
+
+	.new--release--sec .rating--num--movie,
+	.red--num--exc--div {
+		font-size: 15px
+	}
+
+	.exclusive--section--container .latest-images {
+		height: 100px
+	}
+
+	.main-article-content-pv {
+		font-size: 20px !important;
+		line-height: 1.3
+	}
+
+	.red-bg-ltst {
+		padding: 4px 8.9px 2.5px 13px
+	}
+
+	.exp-bttn-ltst {
+		padding: 13px 10px
+	}
+
+	.discover--more--flex {
+		display: grid;
+		grid-template-columns: repeat(4, 1fr);
+		margin: 13px 0 0
+	}
+
+	.lifertyle--div1--img {
+		height: 100%
+	}
+
+	.discover--images {
+		width: 100%
+	}
+
+	.red--nums--exc {
+		padding: 3px 7px 2px 13px
+	}
+
+	.highlights--month--sec .star-net-worth {
+		padding: 6px 0 6px 14px
+	}
+
+	.red--num--exc--div {
+		padding: 9px 12px 8px 20px
+	}
+
+	.horo--tabs--flex .horo--tab--bttn {
+		min-width: fit-content;
+		padding: 8px 10px
+	}
+
+	.zodiac--grid--wrapper {
+		padding: 0 0 20px;
+		border-bottom: 1px dotted #ccc;
+		column-gap: 10px;
+		row-gap: 20px
+	}
+
+	.webstry--line--div {
+		bottom: 12px
+	}
+
+	.webstory--icon {
+		height: 20px;
+		width: 20px;
+		inset: 14px 0 0 14px
+	}
+
+	.webstory--date {
+		line-height: 1.42
+	}
+
+	.highlights--month--sec .star-name {
+		margin: 13px 0 0 9px
+	}
+
+	.pvk--adv--title--bio {
+		margin: 2px 0 0;
+		line-height: 1.5;
+		letter-spacing: .29px
+	}
+
+	.box--office--blue--sec {
+		padding: 20px 0 30px
+	}
+
+	.box--office--blue--sec .title--font--pv.max-width-sec {
+		margin: 0 16px
+	}
+
+	.new--release--sec {
+		margin: 15px 0 10px 16px
+	}
+
+	.new--release--sec .bttn--div--new {
+		display: none
+	}
+
+	.new--release--sec .new--release--flex {
+		padding: 0 16px 0 0;
+		gap: 12px;
+		margin: 10px 0 0
+	}
+
+	.new--release--sec .new--release--images {
+		height: 164.5px
+	}
+
+	.new--release--sec .icon--new--release {
+		inset: 25% 0 0 40%
+	}
+
+	.new--release--sec .new--release--content--div,
+	.webstry--line--div {
+		padding: 0 8px
+	}
+
+	.new--release--sec .rating--num--movie {
+		padding: 3px 0 0;
+		line-height: 1.27;
+		letter-spacing: .23px
+	}
+
+	.new--release--sec .rating--star--icon {
+		width: 15.4px;
+		height: 14.6px
+	}
+
+	.up--movies--section .up--movies--flex--wrapper {
+		margin: 15px 0 0;
+		flex-wrap: wrap;
+		gap: 20px;
+		display: flex;
+		flex-direction: column
+	}
+
+	.tabcontent--mv--review {
+		gap: 10px;
+		margin: 20px 0 0;
+		grid-template-columns: 1fr
+	}
+
+	.up--movies--section .up--movies--images {
+		height: 184.2px
+	}
+
+	.up--movies--section .icon--up--movies {
+		inset: 25% 0 0 42%
+	}
+
+	.up--movies--section .up--movies--date {
+		padding: 1.5px 6px
+	}
+
+	.mv--review--name {
+		line-height: 1.39
+	}
+
+	.mv--review--images {
+		width: 113px
+	}
+
+	.mv--review--content--div {
+		padding: 7px 0 10px 12px
+	}
+
+	.red_clr_ltst {
+		padding: 5px 15px 5px 5px
+	}
+}
+
+@media only screen and (min-width:600px) and (max-width:950px) {
+	.zodiac--grid--wrapper {
+		grid-template-columns: repeat(5, 1fr)
+	}
+}
+
+@media only screen and (min-width:450px) and (max-width:600px) {
+	.zodiac--grid--wrapper {
+		grid-template-columns: repeat(4, 1fr)
+	}
+}
+
+@media (max-width:450px) {
+	.zodiac--grid--wrapper {
+		place-items: center;
+		grid-template-columns: repeat(3, 1fr)
+	}
+
+	.pvk--adv--grid {
+		grid-template-columns: repeat(2, 1fr)
+	}
+
+	.exclusive--video--wrapper {
+		grid-template-columns: 1fr
+	}
+}
+
+@media (max-width:550px) {
+	.discover--more--flex {
+		padding: 0 17px;
+		place-items: center
+	}
+
+	.webstory--grid--wrapper {
+		column-gap: 13px;
+		margin: 15px 0 0
+	}
+
+	.discover--more--flex,
+	.webstory--grid--wrapper {
+		grid-template-columns: repeat(2, 1fr);
+		row-gap: 20px
+	}
+}
+
+@media (min-width:950px) {
+	.link_PAB_mobile {
+		display: none !important
+	}
+
+	.trailer--movies--window.small--window--movies {
+		margin: 10% auto
+	}
+
+	.trailer--movies--window,
+	.trailer--movies--window.small--window--movies {
+		width: 50%
+	}
+}
+
+.homemobiletopad div {
+	width: 320px;
+	height: 60px;
+	margin: 0 auto
+}
+
+@media (max-width:519px) {
+	.homemobiletopad span {
+		font-size: 10px !important;
+		color: #8b8b8b;
+		padding-bottom: 2px !important
+	}
+
+	.homemobiletopad {
+		border: none !important;
+		padding: 5px 0 0 !important
+	}
+
+	.articleads span,
+	.homemobiletopad span,
+	.mobileads span,
+	.sideads span,
+	.topads span {
+		display: block;
+		text-align: center
+	}
+
+	#rooms-post-detail,
+	.homemobiletopad,
+	.m-0 {
+		margin: 0 !important
+	}
+
+	.mobileads {
+		width: 100% !important;
+		margin-bottom: 10px !important
+	}
+
+	.articleads,
+	.homemobiletopad,
+	.mobileads,
+	.topads {
+		border: 1px solid gray;
+		padding: 10px;
+		margin: 0;
+		background: #f3f1f1
+	}
+}
+
+#skinner_left,
+.skinnerAd.left {
+	left: 0;
+    display: none;
+}
+
+.skinnerAd {
+	z-index: 999;
+	margin: 0 5px;
+	width: 160px;
+	height: 600px;
+	min-height: 600px;
+	position: fixed;
+	top: 136px
+}
+
+.skinnerAd,
+.w160 {
+	min-width: 160px
+}
+
+#skinner_right,
+.skinnerAd.right {
+	right: 0
+}
+
+.articleads span,
+.homemobiletopad span,
+.mobileads span,
+.sideads span,
+.skinnerAd.left span,
+.skinnerAd.right span,
+.topads span {
+	display: block;
+	padding-bottom: 8px;
+	text-align: center
+}
+
+.articleads,
+.homemobiletopad,
+.mobileads,
+.topads {
+	border: 1px solid gray
+}
+
+#skinnerAdClosebtn {
+	margin: 5px;
+	position: fixed;
+	top: 95px;
+	right: 0;
+	cursor: pointer
+}
+
+.lifestyle--bttn--flex {
+	overflow: auto;
+	display: flex
+}
+
+@media (max-width:500px) {
+	.exclusive--ad--container {
+		max-width: 100%
+	}
+}
+
+@media (max-width:1500px) {
+
+	#skinnerAdClosebtn,
+	.skinnerAd {
+		display: none !important
+	}
+}
+
+.zodiac--sign--wrapper {
+	margin-top: 30px
+}
+
+.exclusive--ad--container .topads {
+	border: unset
+}
+
+.collapsible_bttn_header {
+	padding: 15px 20px;
+	position: relative;
+	border-bottom: 1px solid #e3e4e3
+}
+
+.collapsible_bttn_header>.collapsible_anchor_header {
+	font: 500 16px 'Futura PT Medium';
+	letter-spacing: .48px;
+	text-transform: capitalize;
+	text-align: left;
+	color: #0c0c0f
+}
+
+.white--bg--movies {
+	margin-top: 25px;
+	margin-bottom: 25px
+}
+
+.review--full--grid--secv2 {
+	grid-template-columns: 1fr
+}
+
+.select-review-inline {
+	grid-template-columns: repeat(5, 1fr)
+}
+
+.ent--toparticle--gridv2 .ent--rhtgrid--v2 {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	gap: 50px
+}
+
+.ent--toparticle--gridv2 {
+	grid-template-columns: 1.5555fr 1fr;
+	gap: 50px
+}
+
+.red--clr--artv2 {
+	font: 700 10px/1.5 Gilroy;
+	background: #d80000;
+	letter-spacing: .32px;
+	color: #fff;
+	clip-path: polygon(0 0, 100% 0%, 95% 100%, 0% 100%);
+	letter-spacing: .72px;
+	position: absolute;
+	top: 0;
+	padding: 2px 7px 2px 5px;
+	white-space: nowrap
+}
+
+#main-navigation li a,
+.header_v1 .top-menu>li>a.p-2,
+.navbar-brand-logo,
+.top-menu-item {
+	font-family: Gilroy-Medium, Roboto, "Helvetica Neue", sans-serif;
+	font-weight: 400;
+	line-height: 1.5
+}
+
+#taboola-below-home-thumbnails-desk {
+	width: 1200px;
+	margin: 0 auto
+}
+
+.open_modal_boxff,
+.top-story-div1>a,
+.top-story-div>a {
+	display: block !important
+}
+
+.top-story-div1 {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	position: relative;
+	gap: 20px
+}
+
+.latest-box-container>a {
+	display: flex;
+	height: fit-content;
+	border-right: none;
+	gap: 0
+}
+
+.latest-box-container {
+	position: relative;
+	display: flex;
+	border-right: 1px solid #ccc;
+	gap: 10px
+}
+
+#top-user-image,
+.beauty--tab--bttn,
+.cursor_p,
+.ent--tab--bttn--style,
+.fashion--tab--bttn,
+.horo--tabs--flex .horo--tab--bttn,
+.korean--tab--bttn,
+.lifestyle--bttn,
+.mv--review--bttn,
+.navbar-toggler:not(:disabled):not(.disabled),
+.pvk--board--bttn,
+.select--tab--bttn,
+.tech--tab--bttn,
+.top--mv--bttns,
+.tv--health--bttn,
+.tv--tab--bttn {
+	cursor: pointer
+}
+
+#header {
+	position: sticky;
+	top: 0;
+	z-index: 1000
+}
+
+.container,
+.widget-container {
+	width: 100%;
+	margin-right: auto;
+	margin-left: auto;
+	max-width: 100%
+}
+
+.entertainment--bottom--grid {
+	margin: 30px 0 0
+}
+
+.navbar {
+	padding: .1rem 1rem .1rem .3rem;
+	position: relative;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	flex-wrap: wrap;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	-webkit-box-pack: justify;
+	-ms-flex-pack: justify;
+	justify-content: space-between
+}
+
+.header_v1 .lateral_menu {
+	margin-right: 55px
+}
+
+@media (min-width:520px) {
+	.container {
+		max-width: none
+	}
+
+	#header .container {
+		max-width: 1200px
+	}
+
+	.navbar-div {
+		width: 210px;
+		height: 38px
+	}
+
+	.nav-scroller .nav {
+		padding-bottom: .5rem !important;
+		padding-top: .6rem;
+		padding-left: 0
+	}
+
+	.nav-scroller .nav a.active {
+		background-color: #fff;
+		color: #8a8a8a !important;
+		border-bottom: 3px solid #d52457;
+		border-radius: 0
+	}
+
+	.dropdown-menu.active {
+		background-color: #e9ecef;
+		margin-bottom: 18px;
+		position: absolute;
+		justify-content: center;
+		width: 100%;
+		right: 0;
+		top: 56px
+	}
+
+	.top-menu-item.active {
+		background-color: unset;
+		color: #d52457 !important;
+		font-weight: 800
+	}
+
+	.top-menu-item.active a {
+		color: #d52457
+	}
+
+	.topads div {
+		width: 970px;
+		height: 250px;
+		margin: 0 auto
+	}
+}
+
+.nav-scroller .nav {
+	display: flex;
+	padding-bottom: 1rem;
+	margin-top: -1px;
+	overflow-x: auto;
+	-webkit-overflow-scrolling: touch
+}
+
+.lateral_menu,
+.lateral_menu .nav,
+.lateral_menu .nav-scroller .nav {
+	overflow-y: hidden
+}
+
+*,
+.container,
+.live_indicator:after,
+.live_indicator:before,
+.subscribe-submit-btn,
+.widget-container,
+::after,
+::before {
+	box-sizing: border-box;
+	box-sizing: border-box
+}
+
+.header_v1 .top-menu>li>a.p-2 {
+	padding: .3rem !important
+}
+
+.top-menu>li>a {
+	font-size: 15px !important
+}
+
+.child-menu.active {
+	display: flex;
+	position: absolute;
+	margin: 0 auto
+}
+
+.top-menu-item {
+	padding: 10px;
+	font-size: 14px
+}
+
+.dropdown-menu .active {
+	color: #8a8a8a !important;
+	text-decoration: none;
+	font-size: 14px;
+	padding-left: .5rem !important;
+	padding-right: .5rem !important;
+	margin-right: 0
+}
+
+.text-capitalize {
+	text-transform: capitalize
+}
+
+.modal {
+	display: none;
+	z-index: 999;
+	background-color: rgba(0, 0, 0, .4);
+	overflow: auto;
+	left: auto;
+	top: auto;
+	bottom: 0;
+	width: 100%
+}
+
+.icon,
+.icon-48,
+.navbar-brand-logo,
+.navbar-toggler-icon,
+.show {
+	display: inline-block
+}
+
+#side-menu,
+.ofy-scroll,
+.scrollable-y {
+	overflow-y: scroll
+}
+
+.bg-black {
+	color: #fff;
+	background-color: #1f1f1f
+}
+
+.modal,
+.modal-content-right {
+	right: 0;
+	position: fixed;
+	height: 100%
+}
+
+.p-3 {
+	padding: 1rem !important
+}
+
+#side-menu-download-app {
+	background: #303030;
+	font-size: 16px;
+	font-weight: 500
+}
+
+#header a,
+.korean a.text-capitalize {
+	color: #212529 !important
+}
+
+.navbar-brand-logo {
+	margin-bottom: 10px;
+	width: 150px;
+	background: url(../images/pinkvilla-logo-v2.png) center/150px 23px no-repeat #fff;
+	font-size: 14px;
+	text-align: left
+}
+
+.navbar-light .navbar-toggler {
+	color: rgba(0, 0, 0, .5);
+	border: 0
+}
+
+.navbar-toggler {
+	padding: .25rem .75rem;
+	font-size: 1.1rem;
+	line-height: 1;
+	border-radius: .25rem
+}
+
+.navbar-toggler,
+a {
+	background-color: transparent
+}
+
+.icon-menu-sports {
+	background: url(../icons/menu_sports_pv1b26.png?v2);
+}
+
+.icon-menu-sports-pv {
+	background: url(../icons/menu_sports1b26.png?v2);
+}
+
+.icon-menu-home-pv {
+	background: url(../icons/menu_home_pv6654.svg?v1) 0 0/13px;
+	margin: 3px 0 0
+}
+
+.icon-menu-entertainment {
+	background: url(../icons/menu_entertainment1b26.png?v2)
+}
+
+.align-middle,
+.vertical-align-middle {
+	vertical-align: middle !important
+}
+
+.icon {
+	width: 18px;
+	height: 18px;
+	background-repeat: no-repeat !important;
+	vertical-align: bottom
+}
+
+.icon-menu-select {
+	background: url(../icons/select-Icon1b26.svg?v2)
+}
+
+.icon-menu-webseries {
+	background: url(../icons/menu_webseries1b26.png?v2)
+}
+
+.icon-menu-lifestyle {
+	background: url(../icons/menu_lifestyle1b26.png?v2)
+}
+
+.icon-menu-fashion {
+	background: url(../icons/menu_fashion1b26.png?v2)
+}
+
+.icon-menu-korean {
+	background: url(../icons/menu_korean1b26.png?v2)
+}
+
+.icon-menu-tech {
+	background: url(../icons/icon-tech-unactive.svg) 0 0/95%;
+	margin-right: 1px
+}
+
+.icon-menu-all {
+	background: url(../icons/menu_all1b26.png?v2)
+}
+
+.icon-menu-horoscope {
+	background: url(../icons/menu_horoscope.png)
+}
+
+.icon-new:before {
+	top: 0 !important;
+	content: "";
+	position: absolute;
+	height: 20px;
+	width: 32px;
+	background: url(../icons/new6654.svg?v1) no-repeat
+}
+
+#main-navigation {
+	padding: 10px;
+	width: 300px;
+	margin-top: 0
+}
+
+#main-navigation li a,
+#policy li a,
+#side-menu a {
+	color: #fff !important
+}
+
+#main-navigation li a {
+	padding: 6px 0;
+	display: inline-block;
+	font-size: 14px
+}
+
+.bbw {
+	border-bottom: 2px solid #fff
+}
+
+.btw {
+	border-top: 2px solid #fff
+}
+
+#follow-us ul li {
+	float: left;
+	width: 25%
+}
+
+.py10 {
+	padding: 10px 0 !important
+}
+
+#policy li {
+	float: left;
+	width: 50%
+}
+
+.navbar-light .navbar-toggler-icon {
+	background-image: url(../icons/mobile-nav.svg)
+}
+
+.navbar-toggler-icon {
+	width: 1.5em;
+	height: 1.5em;
+	vertical-align: middle;
+	content: "";
+	background: center center/100% 100% no-repeat
+}
+
+.container.main-container {
+	padding-top: 17px
+}
+
+@media (max-width:519px) {
+
+	.hide-mobile,
+	.latest-trending-photos-desktop,
+	.wlayout {
+		display: none
+	}
+
+	.nav-scroller .nav {
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		padding-bottom: 0;
+		margin-top: -1px;
+		overflow-x: auto;
+		overflow-y: hidden;
+		-webkit-overflow-scrolling: touch;
+		padding-top: 0 !important
+	}
+
+	.child-menu.active {
+		display: -webkit-box;
+		position: relative;
+		overflow-y: hidden;
+		padding: 15px 0 8px 10px;
+		box-shadow: 0 4px 6px -4px rgb(0 0 0 / 16%)
+	}
+
+	.top-menu-item.in-active {
+		background: #f5f5f5
+	}
+
+	.dropdown-menu .top-menu-item {
+		border-radius: 20px;
+		padding: 6px 15px !important;
+		margin: 0 4px;
+		border: 1px solid #ebebeb
+	}
+
+	.navbar-center {
+		padding-left: 0
+	}
+
+	#ham-menu {
+		padding: 5px 0
+	}
+
+	#header .top-menu li a.active {
+		color: #d52457 !important;
+		border-bottom: 2px solid;
+		padding-left: 0 !important;
+		padding-right: 0 !important;
+		margin: 0 .75rem !important
+	}
+
+	.nav-scroller .nav a.active,
+	.top-menu {
+		background-color: #f5f5f5 !important
+	}
+
+	.top-menu>li>a {
+		padding: .6rem .75rem .4rem !important;
+		font-family: Gilroy-Medium, Roboto, "Helvetica Neue", sans-serif;
+		font-weight: 400;
+		line-height: 1.5
+	}
+
+	.nav-scroller .nav a {
+		border-radius: 0;
+		display: inline-flex !important
+	}
+
+	.top-menu-item.active {
+		background: #e43462
+	}
+}
+
+#header a,
+.navbar-brand,
+.room-nav {
+	white-space: nowrap
+}
+
+.mobileads div {
+	text-align: center
+}
+
+.sideads div,
+.topads div {
+	display: flex;
+	margin: 0 auto;
+	height: 250px
+}
+
+.articleads div,
+.mobileads div {
+	width: 300px;
+	height: 250px;
+	margin: 0 auto
+}
+
+.mobileads {
+	width: 100% !important;
+	margin-bottom: 10px !important
+}
+
+.adp-interscroller-ad-label-bottom,
+.adp-interscroller-ad-label-top {
+	height: 0 !important
+}
+
+.article--tab--div--flex::-webkit-scrollbar,
+.child-menu.active::-webkit-scrollbar,
+.discover--more--flex::-webkit-scrollbar,
+.horo--tabs--flex::-webkit-scrollbar,
+.lifestyle--bttn--flex::-webkit-scrollbar,
+.nav-scroller .nav::-webkit-scrollbar,
+.select--review--flex::-webkit-scrollbar,
+.mv--review--bttn-div::-webkit-scrollbar {
+	display: none
+}
+
+.beauty-wrapper {
+	padding: 20.5px 0 1px;
+	background-color: #f2f5f7
+}
+
+.up--movies--homev2 {
+	margin: 25px auto 20px
+}
+
+.up--movies--homev2 .grid--table--upmvsv2 {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	gap: 23px;
+	margin: 15px 0 0
+}
+
+.up--movies--homev2 .table--celeb--container {
+	display: table;
+	border: 1px solid #4b4b4b;
+	background-color: #fff
+}
+
+.up--movies--homev2 .row--celb--table {
+	display: table-row
+}
+
+.up--movies--homev2 .cell--table--celeb {
+	vertical-align: middle;
+	text-align: center;
+	height: 100%;
+	padding: 10px 16px;
+	display: table-cell;
+	border-bottom: 1px solid #e2e2e2
+}
+
+.table--celeb--container .row--celb--table:last-child .cell--table--celeb {
+	border-bottom: none
+}
+
+.up--movies--homev2 .celeb--tble--header {
+	font: 13px 'Futura PT Demi';
+	background: #f1f5f7;
+	text-transform: uppercase;
+	white-space: nowrap;
+	vertical-align: middle;
+	letter-spacing: .14px;
+	color: #0c0c0f;
+	text-align: left
+}
+
+.up--movies--homev2 .table--name--flex {
+	display: flex;
+	gap: 10px
+}
+
+.up--movies--homev2 .table--name--flex a {
+	margin: auto 0;
+	display: flex
+}
+
+.up--movies--homev2 .table--mv--img {
+	width: 43.8px;
+	height: 60px;
+	object-fit: cover;
+	margin: auto 0
+}
+
+.up--movies--homev2 .celebtable--mvname {
+	font: bold 16px/1.5 'Futura PT Bold';
+	margin: auto 0;
+	text-align: left;
+	color: #0c0c0f;
+	text-decoration: underline
+}
+
+.up--movies--homev2 .celebtable--releasestyle {
+	font: 600 15px/1.33 Gilroy;
+	letter-spacing: .3px;
+	color: #46464b;
+	text-align: left
+}
+
+@media (max-width:1200px) {
+	.lifertyle--div1 {
+		padding: 0;
+		border-bottom: none
+	}
+
+	.discover--more--flex {
+		display: flex !important;
+		overflow-x: auto;
+		flex-wrap: nowrap
+	}
+
+	.discover--images {
+		width: 120px;
+		height: 120px
+	}
+
+	.ent--toparticle--gridv2 {
+		gap: 0;
+		grid-template-columns: 1fr
+	}
+
+	.ent--toparticle--gridv2 .ent--rhtgrid--v2 {
+		row-gap: 20px;
+		column-gap: 15px
+	}
+
+	.top_story_first_image.top_section {
+		aspect-ratio: 3/1.6 !important;
+	}
+
+	.top_story_first_image,
+	.top_story_first_image.top_section {
+		width: 100%;
+		aspect-ratio: 3/1.6;
+		object-fit: unset
+	}
+
+	.first--div--ent {
+		margin-bottom: 20px
+	}
+
+	.white--bg--movies {
+		border: none;
+		padding: 0
+	}
+
+	.discover--more--wrapper {
+		margin: 0 0 0 16px
+	}
+
+	.top-story-div1 {
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+		gap: 5px
+	}
+
+	.top-story-div {
+		display: flex;
+		gap: 8px
+	}
+
+	.latest-box-container {
+		border-right: none
+	}
+
+	.select--review--box>a {
+		gap: 0;
+		width: fit-content;
+		display: block
+	}
+
+	.select--review--box {
+		gap: 10px;
+		width: 82vw;
+		display: flex
+	}
+
+	.up--movies--homev2 {
+		margin: 0 16px 20px
+	}
+}
+
+.mv-review--wrapperv2 {
+	background-color: #000;
+	border: none;
+	padding: 25px 0 30px
+}
+
+.mv-review--wrapperv2 .movie--month--section {
+	margin: 0 auto
+}
+
+.mv-review--wrapperv2 .mv--review--bttn,
+.mv-review--wrapperv2 .subtitle--font--pv {
+	color: #f5f5fa
+}
+
+.mv-review--wrapperv2 .mv--review--bttn.mv--review--active {
+	color: #0c0c0f;
+	border: 1px solid #4b4b4b;
+	background-color: #fff
+}
+
+@media (max-width:950px) {
+	.mv-review--wrapperv2 {
+		padding: 20px 16px 40px
+	}
+
+	.mv-review--wrapperv2 .movie--month--section {
+		margin: 0
+	}
+}
+
+@media (max-width:767px) {
+
+	#interstitial,
+	.stickyAd {
+		position: fixed;
+		left: 0;
+		right: 0;
+		text-align: center
+	}
+
+	.stickyAd {
+		width: 100%;
+		height: auto;
+		background: #f5f5f5;
+		z-index: 2028;
+		bottom: 0;
+		margin-top: 0
+	}
+
+	.stickyAdCloseBtn {
+		position: relative;
+		margin-top: -28px;
+		right: 5px;
+		background-color: #f5f5f5;
+		border-top-left-radius: 5px;
+		border-top-right-radius: 5px;
+		width: 34px;
+		height: 30px;
+		float: right;
+		z-index: 9999;
+		background-position: center center
+	}
+
+	#bottom-sticky-ad {
+		width: 320px;
+		height: 52px
+	}
+
+	#bottom-sticky-ad,
+	.stickyAd {
+		margin-left: auto;
+		margin-right: auto
+	}
+
+	.icon-cross {
+		background: url(../../massets/icons/cross.svg)
+	}
+
+	.icon {
+		width: 20px;
+		height: 20px;
+		background-repeat: no-repeat !important;
+		vertical-align: bottom
+	}
+
+	#interstitial {
+		width: 300px;
+		top: 15%;
+		margin: 0 auto;
+		padding: 0;
+		z-index: 999
+	}
+
+	.up--movies--homev2 .row--celb--table {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr)
+	}
+
+	.up--movies--homev2 .celebtable--releasestyle {
+		position: absolute;
+		top: 50%;
+		transform: translateY(-50%);
+		font-size: 13px
+	}
+
+	.up--movies--homev2 .grid--table--upmvsv2 {
+		display: flex;
+		flex-direction: column;
+		gap: 0;
+		margin: 10px 0 0;
+		border: 1px solid #cbcbcc;
+		background-color: #fff
+	}
+
+	.up--movies--homev2 .d-none--tablev2 {
+		display: none
+	}
+
+	.up--movies--homev2 .table--celeb--container {
+		border: none
+	}
+
+	.up--movies--homev2 .cell--table--celeb {
+		position: relative;
+		padding: 10px
+	}
+
+	.up--movies--homev2 .celeb--tble--header {
+		font-size: 10px
+	}
+
+	.up--movies--homev2 .table--name--flex {
+		gap: 5px
+	}
+
+	.up--movies--homev2 .table--mv--img {
+		width: 29px;
+		height: 40px
+	}
+
+	.up--movies--homev2 .celebtable--mvname {
+		font-size: 15px
+	}
+
+	.table--celeb--container:last-child .row--celb--table:last-child .cell--table--celeb {
+		border-bottom: none
+	}
+
+	.table--celeb--container .row--celb--table:last-child .cell--table--celeb {
+		border-bottom: 1px solid #e2e2e2
+	}
+
+	.celeb--tble--header.rel--date-lft--v2 {
+		position: absolute;
+		top: 50%;
+		transform: translateY(-50%)
+	}
+}
+
+@media screen and (min-width:650px) and (max-width:767px) {
+
+	.celeb--tble--header.rel--date-lft--v2,
+	.up--movies--homev2 .celebtable--releasestyle {
+		left: 60%
+	}
+}
+
+@media screen and (min-width:500px) and (max-width:650px) {
+
+	.celeb--tble--header.rel--date-lft--v2,
+	.up--movies--homev2 .celebtable--releasestyle {
+		left: 50%
+	}
+}
+
+@media screen and (min-width:350px) and (max-width:500px) {
+
+	.celeb--tble--header.rel--date-lft--v2,
+	.up--movies--homev2 .celebtable--releasestyle {
+		left: 40%
+	}
+}
+
+@media screen and (min-width:290px) and (max-width:350px) {
+
+	.celeb--tble--header.rel--date-lft--v2,
+	.up--movies--homev2 .celebtable--releasestyle {
+		left: 30%
+	}
+}
+
+@media (min-width:1200px) {
+
+	.highlights--month--sec .none--hlts--desktop,
+	.nav-scrollbar-mobile-header,
+	.pagination--beauty--review,
+	.pagination--fashion,
+	.pagination--lifestyle--review,
+	.pagination--new--release,
+	.pagination--season {
+		display: none !important
+	}
+
+	.ad-box-head {
+		margin-bottom: 28px
+	}
+
+	.season--picks--images,
+	.top_story_images {
+		height: 100%
+	}
+
+	.top-story-flex {
+		grid-template-columns: 3.3fr 1fr 1fr 1fr;
+		margin: 0 0 20px
+	}
+
+	.top-story-div {
+		border-left: none;
+		padding: 0
+	}
+
+	.top-story-div1 {
+		grid-template-columns: 1.1fr 1fr
+	}
+
+	.images--article--ent,
+	.top_story_first_image {
+		height: fit-content
+	}
+
+	.top-story-grid {
+		padding: 0;
+		border-top: none
+	}
+
+	.ent--toparticle--gridv2 .ent--rhtgrid--v2 {
+		grid-template-columns: repeat(3, 1fr)
+	}
+
+	.ent--toparticle--gridv2,
+	.ent--toparticle--gridv2 .ent--rhtgrid--v2 {
+		gap: 25px
+	}
+
+	.ent--toparticle--gridv2 {
+		grid-template-columns: 1fr 1fr
+	}
+
+	.first--div--ent,
+	.top-story-div1 {
+		gap: 10px
+	}
+
+	.first--div--content--ent {
+		max-width: 277px
+	}
+
+	.entertainment--bottom--grid,
+	.top-story-grid {
+		grid-template-columns: repeat(6, 1fr)
+	}
+
+	.exclusive--video--wrapper {
+		grid-template-columns: repeat(4, 1fr);
+		column-gap: 25px;
+		row-gap: 20px
+	}
+
+	.excl--video--images {
+		aspect-ratio: 16/9;
+		height: fit-content
+	}
+}
+
+@media (max-width:519px) {
+	#header .top-menu-item.active a {
+		color: #fff !important
+	}
+}
+
+@media (min-width:520px) {
+	.widgetAds.topads div {
+		width: auto
+	}
+}
+
+.article-content-pv,
+.article-time-pv,
+.beauty--tab--bttn,
+.discover--titles,
+.ent--tab--bttn--style,
+.exp-bttn-ltst,
+.fashion--tab--bttn,
+.horo--tabs--flex .horo--tab--bttn,
+.korean--tab--bttn,
+.lifestyle--bttn,
+.mv--review--bttn,
+.mv--review--genre,
+.mvreview--rating--num,
+.mvvreview--cast,
+.pvk--board--bttn,
+.red--num--exc--div,
+.red--nums--exc,
+.red-bg-ltst,
+.red_clr_ltst,
+.select--tab--bttn,
+.subtitle--font--pv,
+.tech--tab--bttn,
+.title--font--pv,
+.top--mv--bttns,
+.tv--health--bttn,
+.tv--tab--bttn,
+.up--movies--homev2 .celeb--tble--header,
+.up--movies--homev2 .celebtable--mvname,
+.up--movies--homev2 .celebtable--releasestyle,
+.up--movies--name,
+.webstory--bio {
+	font-family: Gilroy-Medium !important
+}
+
+.new--release--sec .box--movie--name,
+.red_clr_ltst,
+.up--movies--name {
+	font-size: 18px
+}
+
+.main-article-content-pv,
+.title--font--pv {
+	font-size: 24px !important
+}
+
+.beauty--tab--bttn,
+.ent--tab--bttn--style,
+.exp-bttn-ltst,
+.fashion--tab--bttn,
+.korean--tab--bttn,
+.lifestyle--bttn,
+.main-article-time-pv,
+.main-article-title-pv .exp-bttn-ltst,
+.mv--review--bttn,
+.mv--review--genre,
+.mvvreview--cast,
+.pvk--board--bttn,
+.select--tab--bttn,
+.tech--tab--bttn,
+.top--mv--bttns,
+.tv--health--bttn,
+.tv--tab--bttn,
+.up--movies--homev2 .celebtable--releasestyle {
+	font-size: 13px !important
+}
+
+.article-content-pv,
+.discover--titles,
+.red-bg-ltst {
+	font-size: 16px
+}
+
+.article-time-pv,
+.article-title-pv {
+	font-size: 10px
+}
+
+.subtitle--font--pv {
+	font-size: 22px
+}
+
+.horo--tabs--flex .horo--tab--bttn {
+	font-size: 11px
+}
+
+.red--num--exc--div {
+	font-size: 31px
+}
+
+.red--nums--exc,
+.up--movies--homev2 .celebtable--mvname,
+.webstory--bio {
+	font-size: 14px
+}
+
+.up--movies--homev2 .celeb--tble--header {
+	font-size: 11px
+}
+
+@media (max-width:767px) {
+
+	.highlights--month--sec .star-name,
+	.new--release--sec .box--movie--name,
+	.pvk--adv--names,
+	.red_clr_ltst,
+	.up--movies--name {
+		font-size: 16px !important
+	}
+
+	.article-time-pv {
+		font-size: 9px !important
+	}
+
+	.main-article-time-pv,
+	.main-article-title-pv {
+		font-size: 10px !important
+	}
+
+	.exp-bttn-ltst,
+	.highlights--month--sec .collection-text,
+	.highlights--month--sec .star-net-worth,
+	.red--nums--exc {
+		font-size: 11px !important
+	}
+
+	.beauty--tab--bttn,
+	.ent--tab--bttn--style,
+	.fashion--tab--bttn,
+	.highlights--month--sec .cast-stars-movies,
+	.highlights--month--sec .movie-month-genre,
+	.highlights--month--sec .read-more-style,
+	.highlights--month--sec .star-detail-left,
+	.highlights--month--sec .star-detail-right,
+	.horo--tabs--flex .horo--tab--bttn,
+	.korean--tab--bttn,
+	.lifestyle--bttn,
+	.mv--review--bttn,
+	.mv--review--genre,
+	.mvreview--rating--num,
+	.mvvreview--cast,
+	.pvk--board--bttn,
+	.select--tab--bttn,
+	.tech--tab--bttn,
+	.top--mv--bttns,
+	.tv--health--bttn,
+	.tv--tab--bttn,
+	.up--movies--section .up--movies--date {
+		font-size: 14px !important
+	}
+
+	.highlights--month--sec .subtitle--font--pv,
+	.title--font--pv {
+		font-size: 22px !important
+	}
+
+	.font--rockwell,
+	.main-article-content-pv,
+	.red-bg-ltst {
+		font-size: 18px !important
+	}
+
+	.subtitle--font--pv {
+		font-size: 20px !important
+	}
+
+	.discover--titles {
+		font-size: 14px !important
+	}
+
+	.red--num--exc--div,
+	.up--movies--homev2 .celebtable--mvname {
+		font-size: 13px !important
+	}
+
+	.up--movies--homev2 .celeb--tble--header {
+		font-size: 8px !important
+	}
+}
+
+.explore-more-ltst-entertainment {
+	display: flex;
+	align-items: center;
+	margin: 25px 0 0
+}
+
+.explore-more-ltst-entertainment:after,
+.explore-more-ltst-entertainment:before,
+.explore-more-ltst:after,
+.explore-more-ltst:before {
+	content: '';
+	width: 100%;
+	border: 1px dotted #ccc
+}
+
+.article-content-pv,
+.article-time-pv,
+.beauty--tab--bttn,
+.discover--titles,
+.ent--tab--bttn--style,
+.exp-bttn-ltst,
+.fashion--tab--bttn,
+.horo--tabs--flex .horo--tab--bttn,
+.korean--tab--bttn,
+.lifestyle--bttn,
+.mv--review--bttn,
+.mv--review--genre,
+.mvreview--rating--num,
+.mvvreview--cast,
+.pvk--board--bttn,
+.red--num--exc--div,
+.red--nums--exc,
+.red-bg-ltst,
+.red_clr_ltst,
+.select--tab--bttn,
+.subtitle--font--pv,
+.tech--tab--bttn,
+.title--font--pv,
+.top--mv--bttns,
+.tv--health--bttn,
+.tv--tab--bttn,
+.up--movies--homev2 .celeb--tble--header,
+.up--movies--homev2 .celebtable--mvname,
+.up--movies--homev2 .celebtable--releasestyle,
+.up--movies--name,
+.webstory--bio {
+	font-family: 'Poppins Medium' !important
+}
